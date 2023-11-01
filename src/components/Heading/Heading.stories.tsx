@@ -15,7 +15,6 @@ export default {
   argTypes: {
     children: { type: "string" },
     colorDark: { type: "boolean" },
-    variant: { type: "string" },
   },
   parameters: {
     backgrounds: {
