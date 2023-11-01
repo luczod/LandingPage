@@ -20,4 +20,7 @@ export const themefn = {
       xhg: "6.4rem",
     },
   },
+  media: {
+    lteMedium: "(max-width: 768px)",
+  },
 };

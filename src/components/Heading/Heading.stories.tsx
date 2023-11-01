@@ -10,11 +10,14 @@ export default {
   args: {
     children: "O texto está escuro",
     colorDark: false,
-    variant: "h1",
+    upperTitle: false,
+    size: "small",
+    variant: "h2",
   },
   argTypes: {
     children: { type: "string" },
     colorDark: { type: "boolean" },
+    upperTitle: { type: "boolean" },
   },
   parameters: {
     backgrounds: {

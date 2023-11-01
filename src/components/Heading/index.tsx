@@ -7,6 +7,7 @@ export interface IHeadingProps {
   children: ReactNode;
   variant: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
   size: OverridableStringUnion<"small" | "medium" | "big" | "huge">;
+  upperTitle?: boolean;
 }
 
 export const Heading: React.FC<IHeadingProps> = ({
@@ -14,9 +15,15 @@ export const Heading: React.FC<IHeadingProps> = ({
   colorDark = false,
   variant = "h1",
   size = "big",
+  upperTitle = false,
 }) => {
   return (
-    <S.Title colorDark={colorDark} as={variant} size={size}>
+    <S.Title
+      colorDark={colorDark}
+      upperTitle={upperTitle}
+      as={variant}
+      size={size}
+    >
       {children}
     </S.Title>
   );
