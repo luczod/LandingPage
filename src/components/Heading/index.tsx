@@ -6,7 +6,7 @@ export interface IHeadingProps {
   colorDark: boolean;
   children: ReactNode;
   variant: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
-  size: OverridableStringUnion<"small" | "medium" | "big">;
+  size: OverridableStringUnion<"small" | "medium" | "big" | "huge">;
 }
 
 export const Heading: React.FC<IHeadingProps> = ({
