@@ -9,11 +9,13 @@ export default {
 
   args: {
     children: "O texto está escuro",
-    light: false,
+    colorDark: false,
+    variant: "h1",
   },
   argTypes: {
     children: { type: "string" },
-    light: { type: "boolean" },
+    colorDark: { type: "boolean" },
+    variant: { type: "string" },
   },
   parameters: {
     backgrounds: {
@@ -32,7 +34,7 @@ export default {
 };
 
 export const Light = (args: IHeadingProps) => <Heading {...args} />;
-export const Dark = (args: IHeadingProps) => <Heading {...args} light={true} />;
+export const Dark = (args: IHeadingProps) => <Heading {...args} />;
 
 Light.parameters = {
   backgrounds: {
@@ -42,5 +44,5 @@ Light.parameters = {
 
 Dark.args = {
   children: "O texto está claro",
-  light: true,
+  colorDark: true,
 };
