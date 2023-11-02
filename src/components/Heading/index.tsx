@@ -3,10 +3,10 @@ import { OverridableStringUnion } from "../../types/oneof";
 import * as S from "./styles";
 
 export interface IHeadingProps {
-  colorDark: boolean;
+  colorDark?: boolean;
   children: ReactNode;
-  variant: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
-  size: OverridableStringUnion<"small" | "medium" | "big" | "huge">;
+  variant?: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
+  size?: OverridableStringUnion<"small" | "medium" | "big" | "huge">;
   upperTitle?: boolean;
 }
 
