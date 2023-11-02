@@ -1,0 +1,20 @@
+git init -b main
+
+pnpm add @babel/eslint-parser prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react
+eslint-plugin-react-hooks eslint-plugin-storybook -D
+pnpm add jest @types/jest @babel/core @babel/eslint-parser @babel/preset-env @babel/preset-react babel-jest babel-loader
+jest-styled-components jest-environment-jsdom @testing-library/react @testing-library/jest-dom -D
+pnpm add styled-components
+npx sb init -f
+pnpm add @types/styled-components -D
+npx eslint ./ --ext "js,jsx," --fix
+
+
+pnpm add jest -D
+pnpm add ts-node
+pnpm add jest-environment-jsdom -D
+pnpm add @swc/core @swc/jest -D
+pnpm add @testing-library/react @testing-library/jest-dom @testing-library/user-event -D
+pnpm add jest-styled-components -D
+pnpm add html-webpack-plugin -D
+npx sb init --builder @storybook/builder-vite
