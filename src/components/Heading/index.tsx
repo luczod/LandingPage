@@ -12,7 +12,7 @@ export interface IHeadingProps {
 
 export const Heading: React.FC<IHeadingProps> = ({
   children,
-  colorDark = false,
+  colorDark = true,
   variant = "h1",
   size = "big",
   upperTitle = false,
