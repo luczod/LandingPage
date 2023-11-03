@@ -6,12 +6,12 @@ export const Container = styled.a`
     display: block;
     text-decoration: none;
     font-size: ${theme.font.sizes.sm};
-    padding: ${theme.spacings.xs};
+    padding: ${theme.spacings.sm};
     position: relative;
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 0.8rem;
       left: 50%;
       width: 0;
       height: 0.2rem;

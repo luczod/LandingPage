@@ -23,7 +23,7 @@ describe("<MenuLink/>", () => {
     );
   });
 
-  it("should render open in a new tab", () => {
+  it("should Match snapshot", () => {
     renderTheme(
       <MenuLink link="http://localhost" newTab={false}>
         Children
@@ -36,14 +36,14 @@ describe("<MenuLink/>", () => {
         display: block;
         text-decoration: none;
         font-size: 1.6rem;
-        padding: 0.8rem;
+        padding: 1.6rem;
         position: relative;
       }
 
       .c0::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 0.8rem;
         left: 50%;
         width: 0;
         height: 0.2rem;
