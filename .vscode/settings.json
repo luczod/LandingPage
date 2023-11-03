@@ -1,0 +1,8 @@
+{
+  "vsicons.associations.folders": [
+    {
+      "icon": "test",
+      "extensions": ["__snapshots__"]
+    }
+  ]
+}

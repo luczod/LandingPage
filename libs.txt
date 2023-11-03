@@ -1,4 +1,5 @@
 git init -b main
+https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
 
 pnpm add @babel/eslint-parser prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react
 eslint-plugin-react-hooks eslint-plugin-storybook -D

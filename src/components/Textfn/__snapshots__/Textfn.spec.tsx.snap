@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Textfn/> should match snapshot 1`] = `
+.c0 {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+}
+
+<p
+  class="c0"
+>
+  Children
+</p>
+`;
