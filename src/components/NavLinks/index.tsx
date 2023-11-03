@@ -5,7 +5,7 @@ export interface INavLinksProps {
   Links?: Array<IMenuLinkProps>;
 }
 
-export const NavLinks: React.FC<INavLinksProps> = ({ Links }) => {
+export function NavLinks({ Links }: INavLinksProps) {
   return (
     <S.Container>
       {Links?.map((item) => (
@@ -13,4 +13,4 @@ export const NavLinks: React.FC<INavLinksProps> = ({ Links }) => {
       ))}
     </S.Container>
   );
-};
+}

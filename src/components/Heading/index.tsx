@@ -10,13 +10,13 @@ export interface IHeadingProps {
   upperTitle?: boolean;
 }
 
-export const Heading: React.FC<IHeadingProps> = ({
+export function Heading({
   children,
   colorDark = true,
   variant = "h1",
   size = "big",
   upperTitle = false,
-}) => {
+}: IHeadingProps) {
   return (
     <S.Title
       colorDark={colorDark}
@@ -27,4 +27,4 @@ export const Heading: React.FC<IHeadingProps> = ({
       {children}
     </S.Title>
   );
-};
+}

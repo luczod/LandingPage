@@ -5,6 +5,6 @@ export interface ITextfnProps {
   children: ReactNode;
 }
 
-export const Textfn: React.FC<ITextfnProps> = ({ children }) => {
+export function Textfn({ children }: ITextfnProps) {
   return <S.Container>{children}</S.Container>;
-};
+}

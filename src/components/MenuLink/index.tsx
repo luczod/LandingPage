@@ -7,15 +7,11 @@ export interface IMenuLinkProps {
   newTab?: boolean;
 }
 
-export const MenuLink: React.FC<IMenuLinkProps> = ({
-  children,
-  link,
-  newTab = false,
-}) => {
+export function MenuLink({ children, link, newTab = false }: IMenuLinkProps) {
   const target = newTab ? "_blank" : "_self";
   return (
     <S.Container href={link} target={target}>
       {children}
     </S.Container>
   );
-};
+}
