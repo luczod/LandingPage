@@ -84,9 +84,15 @@ describe("<Heading/>", () => {
 
   it("should render correct heading element", () => {
     const { container } = renderTheme(<Heading variant="h4">texto</Heading>);
-    const heading = screen.getByRole("heading", { name: "texto" });
     const h4 = container.querySelector("h4");
 
     expect(h4?.tagName.toLowerCase()).toBe("h4");
+  });
+
+  it("should match snapshot", () => {
+    const { container } = renderTheme(<Heading>Texto</Heading>);
+    //snpshot sampçe
+    //toMatchInlineSnapshot
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

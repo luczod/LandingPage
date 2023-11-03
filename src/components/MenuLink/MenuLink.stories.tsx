@@ -1,21 +1,23 @@
-import { Textfn, ITextfnProps } from ".";
+import { MenuLink, IMenuLinkProps } from ".";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
 
 export default {
-  title: "Textfn",
-  component: Textfn,
+  title: "MenuLink",
+  component: MenuLink,
 
   args: {
-    children: `Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero molestias ratione facilis ex. Repudiandae fugiat laborum recusandae!Blanditiis, nobis soluta. Quam, debitis ex dicta doloremque eaque officia. Ipsa, temporibus placeat.`,
+    children: "um texto",
+    link: "https://www.invertexto.com/calculadora-de-horas",
+    newTab: true,
   },
   argTypes: {
     children: { type: "string" },
   },
   parameters: {
     backgrounds: {
-      default: "dark",
+      default: "light",
     },
   },
   decorators: [
@@ -29,8 +31,8 @@ export default {
   ],
 };
 
-export const Light = (args: ITextfnProps) => (
-  <div>
-    <Textfn {...args} />
+export const Light = (args: IMenuLinkProps) => (
+  <div style={{ display: "flex" }}>
+    <MenuLink {...args} />
   </div>
 );

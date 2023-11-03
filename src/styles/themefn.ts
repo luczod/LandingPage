@@ -19,18 +19,18 @@ export const themefn = {
       hg: "5.6rem",
       xhg: "6.4rem",
     },
-    space: {
-      xs: "0.8rem",
-      sm: "1.6rem",
-      md: "2.4rem",
-      lg: "3.2rem",
-      xl: "4.0rem",
-      xxl: "4.8rem",
-      hg: "5.6rem",
-      xhg: "6.4rem",
-    },
   },
   media: {
     lteMedium: "(max-width: 768px)",
+  },
+  spacings: {
+    xs: "0.8rem",
+    sm: "1.6rem",
+    md: "2.4rem",
+    lg: "3.2rem",
+    xl: "4.0rem",
+    xxl: "4.8rem",
+    hg: "5.6rem",
+    xhg: "6.4rem",
   },
 };

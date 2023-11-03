@@ -4,5 +4,9 @@
       "icon": "test",
       "extensions": ["__snapshots__"]
     }
+  ],
+  "colorize.languages": [
+    "typescript"
+    // ...
   ]
 }
