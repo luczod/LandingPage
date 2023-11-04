@@ -28,6 +28,7 @@ describe("<NavLinks/>", () => {
     renderTheme(<NavLinks Links={linksList} />);
     expect(screen.getAllByRole("link")).toMatchSnapshot();
   });
+
   it("parentElement should Match snapshot", () => {
     const { container } = renderTheme(<NavLinks Links={linksList} />);
     expect(container.firstChild).toMatchSnapshot();
