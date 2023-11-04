@@ -1,21 +1,19 @@
-import { Textfn, ITextfnProps } from ".";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
+import { GridContent, IGridContentProps } from ".";
+import mock from "./mock";
 
 export default {
-  title: "Textfn",
-  component: Textfn,
-
-  args: {
-    htmlfn: `Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero molestias ratione facilis ex. Repudiandae fugiat laborum recusandae!Blanditiis, nobis soluta. Quam, debitis ex dicta doloremque eaque officia. Ipsa, temporibus placeat.`,
-  },
+  title: "GridContent",
+  component: GridContent,
+  args: mock,
   argTypes: {
-    htmlfn: { type: "string" },
+    children: { type: "string" },
   },
   parameters: {
     backgrounds: {
-      default: "dark",
+      default: "light",
     },
   },
   decorators: [
@@ -29,8 +27,8 @@ export default {
   ],
 };
 
-export const Light = (args: ITextfnProps) => (
+export const Template = (args: IGridContentProps) => (
   <div>
-    <Textfn {...args} />
+    <GridContent {...args} />
   </div>
 );

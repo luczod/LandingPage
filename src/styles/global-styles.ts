@@ -17,6 +17,19 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.font.family.secondary};
+    margin: ${({ theme }) => theme.spacings.lg} 0;
+  }
+
+  p {
+    margin: ${({ theme }) => theme.spacings.md} 0;
+  }
+
+  ul, ol {
+    margin: ${({ theme }) => theme.spacings.md};
+    padding: ${({ theme }) => theme.spacings.md};
+  }
+  a {
+    color: ${({ theme }) => theme.colors.secondaryColor};
   }
 
 `;

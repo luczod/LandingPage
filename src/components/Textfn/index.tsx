@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import * as S from "./styles";
 
 export interface ITextfnProps {
-  children: ReactNode;
+  htmlfn: string;
 }
 
-export function Textfn({ children }: ITextfnProps) {
-  return <S.Container>{children}</S.Container>;
+export function Textfn({ htmlfn }: ITextfnProps) {
+  return <S.Container dangerouslySetInnerHTML={{ __html: htmlfn }} />;
 }

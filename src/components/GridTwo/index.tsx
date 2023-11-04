@@ -19,7 +19,7 @@ export function GridTwo({ title, srcImg, text, bg = false }: IGridTwoProps) {
           <Heading upperTitle colorDark={!bg}>
             {title}
           </Heading>
-          <Textfn>{text}</Textfn>
+          <Textfn htmlfn={text} />
         </S.TextColumn>
         <S.ImgWrap>
           <S.Imgfn src={srcImg} alt="img" />

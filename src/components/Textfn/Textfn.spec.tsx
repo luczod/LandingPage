@@ -4,12 +4,12 @@ import { Textfn } from ".";
 
 describe("<Textfn/>", () => {
   it("should render", () => {
-    renderTheme(<Textfn>Texto</Textfn>);
+    renderTheme(<Textfn htmlfn="Texto" />);
     expect(screen.getByText("Texto")).toBeInTheDocument();
   });
 
   it("should match snapshot", () => {
-    const { container } = renderTheme(<Textfn>Children</Textfn>);
+    const { container } = renderTheme(<Textfn htmlfn="Texto" />);
     //snpshot sampçe
     //toMatchInlineSnapshot
     expect(container.firstChild).toMatchSnapshot();

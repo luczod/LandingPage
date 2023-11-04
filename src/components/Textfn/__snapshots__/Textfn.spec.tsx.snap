@@ -8,6 +8,6 @@ exports[`<Textfn/> should match snapshot 1`] = `
 <p
   class="c0"
 >
-  Children
+  Texto
 </p>
 `;
