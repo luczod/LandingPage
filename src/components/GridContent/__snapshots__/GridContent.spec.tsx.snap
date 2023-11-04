@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GridContent/> should render 1`] = `
+exports[`<GridContent/> should render grid content 1`] = `
 .c2 {
   text-align: center;
   max-width: 58rem;
