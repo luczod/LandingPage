@@ -14,4 +14,11 @@ describe("<LogoLink/>", () => {
     const img = screen.getByRole("img", { name: "hello" });
     expect(img).toHaveAttribute("src", "#img");
   });
+  it("should Match snapshot", () => {
+    const { container } = renderTheme(
+      <LogoLink link="#target" srcImg="#img" text="hello" />
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
