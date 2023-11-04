@@ -7,7 +7,7 @@ export interface INavLinksProps {
 
 export function NavLinks({ Links }: INavLinksProps) {
   return (
-    <S.Container>
+    <S.Container aria-label="Main menu">
       {Links?.map((item) => (
         <MenuLink key={item.link} {...item} />
       ))}

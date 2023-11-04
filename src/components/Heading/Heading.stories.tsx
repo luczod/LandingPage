@@ -9,7 +9,7 @@ export default {
 
   args: {
     children: "O texto está escuro",
-    colorDark: false,
+    colorDark: true,
     upperTitle: false,
     size: "small",
     variant: "h2",

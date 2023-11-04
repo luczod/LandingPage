@@ -1,9 +1,18 @@
-import styled, { css } from "styled-components";
+import styled, { DefaultTheme, css } from "styled-components";
 import { Container as SectionContainer } from "../SectionContainer/styles";
 import { Title as Heading } from "../Heading/styles";
 
-export const Container = styled.div`
-  ${({ theme }) => css`
+interface IProps {
+  visible: boolean;
+}
+
+const menuVisible = () => css`
+  visibility: visible;
+  opacity: 1;
+`;
+
+export const Container = styled.div<IProps>`
+  ${({ theme, visible }) => css`
     position: fixed;
     z-index: 5;
     top: 0;
@@ -26,6 +35,9 @@ export const Container = styled.div`
 
     @media ${theme.media.lteMedium} {
       height: 100vh;
+      visibility: hidden;
+      opacity: 0;
+      ${visible && menuVisible()}
 
       > ${SectionContainer} {
         display: grid;
@@ -59,6 +71,29 @@ export const MenuContainer = styled.div`
   `}
 `;
 
-export const Btn = styled.button`
-  ${({ theme }) => css``}
+export const Btn = styled.button<IProps>`
+  ${({ theme, visible }) => css`
+    z-index: 6;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    background: ${theme.colors.primaryColor};
+    color: ${theme.colors.white};
+    border: none;
+    display: none;
+    pointer-events: ${visible ? "none" : "all"};
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    > svg {
+      cursor: pointer;
+      padding-top: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  `}
 `;

@@ -4,6 +4,7 @@ exports[`<LogoLink/> should Match snapshot 1`] = `
 .c1 {
   color: inherit;
   display: flex;
+  text-decoration: none;
   align-items: center;
 }
 
