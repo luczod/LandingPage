@@ -22,7 +22,11 @@ export function Menu({ Links = [], logoData }: IMenuProps) {
         {visible && <MenuIcon size={32} aria-label="Open menu" />}
         {!visible && <XIcon size={32} aria-label="Close menu" />}
       </S.Btn>
-      <S.Container visible={visible} onClick={() => setVisible(false)}>
+      <S.Container
+        aria-label="wrap"
+        visible={visible}
+        onClick={() => setVisible(false)}
+      >
         <SectionContainer>
           <S.MenuContainer>
             <LogoLink {...logoData} />
