@@ -5,7 +5,7 @@ import { linksList } from "../NavLinks/mock";
 import { Menu, IMenuProps } from ".";
 
 export default {
-  title: "Menu",
+  title: "Navbar/Menu",
   component: Menu,
 
   args: {

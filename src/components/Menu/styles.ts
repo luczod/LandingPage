@@ -18,10 +18,7 @@ export const Container = styled.div<IProps>`
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    width: 100%;
-    border-bottom: ${theme.colors.mediumGray};
-    background: ${theme.colors.white};
+    transition: all 300ms ease-in-out;
 
     > ${SectionContainer} {
       padding-top: 0;
@@ -59,9 +56,11 @@ export const Container = styled.div<IProps>`
 
 export const MenuContainer = styled.div`
   ${({ theme }) => css`
+    background: ${theme.colors.white};
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 0.1rem solid ${theme.colors.mediumGray};
 
     @media ${theme.media.lteMedium} {
       display: block;

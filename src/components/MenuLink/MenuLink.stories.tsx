@@ -4,7 +4,7 @@ import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
 
 export default {
-  title: "MenuLink",
+  title: "Navbar/MenuLink",
   component: MenuLink,
 
   args: {

@@ -5,7 +5,7 @@ import { NavLinks, INavLinksProps } from ".";
 import { linksList } from "./mock";
 
 export default {
-  title: "NavLinks",
+  title: "Navbar/NavLinks",
   component: NavLinks,
 
   args: {

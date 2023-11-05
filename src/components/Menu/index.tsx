@@ -27,12 +27,10 @@ export function Menu({ Links = [], logoData }: IMenuProps) {
         visible={visible}
         onClick={() => setVisible(false)}
       >
-        <SectionContainer>
-          <S.MenuContainer>
-            <LogoLink {...logoData} />
-            <NavLinks Links={Links} />
-          </S.MenuContainer>
-        </SectionContainer>
+        <S.MenuContainer>
+          <LogoLink {...logoData} />
+          <NavLinks Links={Links} />
+        </S.MenuContainer>
       </S.Container>
     </>
   );

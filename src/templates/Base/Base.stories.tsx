@@ -1,19 +1,25 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
-import { LogoLink, ILogoLinkProps } from ".";
+import { Base, IBaseProps } from ".";
+import { GridText } from "../../components/GridText";
+import Gridmock from "../../components/GridText/mock";
+import mock from "./mock";
 
 export default {
-  title: "Navbar/LogoLink",
-  component: LogoLink,
+  title: "Templates/Base",
+  component: Base,
 
   args: {
-    text: "LogoLink",
-    srcImg: "assets/images/logo.svg",
-    link: "http://localhost",
-  },
-  argTypes: {
-    text: { type: "string" },
+    children: (
+      <>
+        <GridText {...Gridmock} bg />
+        <GridText {...Gridmock} />
+        <GridText {...Gridmock} bg />
+        <GridText {...Gridmock} />
+      </>
+    ),
+    ...mock,
   },
   parameters: {
     backgrounds: {
@@ -31,18 +37,8 @@ export default {
   ],
 };
 
-export const ImageOnly = (args: ILogoLinkProps) => (
+export const Template = (args: IBaseProps) => (
   <div>
-    <LogoLink {...args} />
+    <Base {...args} />
   </div>
 );
-
-export const TextOnly = (args: ILogoLinkProps) => (
-  <div>
-    <LogoLink {...args} />
-  </div>
-);
-
-TextOnly.args = {
-  srcImg: "",
-};
