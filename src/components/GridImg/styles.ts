@@ -47,9 +47,11 @@ export const ModalImg = styled.div`
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     background-color: rgba(0 0 0 / 0.3); /* color-Black w/ opacity */
+    border-radius: 1rem;
+
     & > span {
       position: fixed;
       cursor: pointer;

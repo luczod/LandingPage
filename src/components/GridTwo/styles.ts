@@ -22,7 +22,7 @@ export const Container = styled.div<IProps>`
   `}
 `;
 
-export const TextColumn = styled.div`
+export const TextColumn = styled.article`
   ${({ theme }) => css`
     @media ${theme.media.lteMedium} {
       margin-bottom: ${theme.spacings.lg};

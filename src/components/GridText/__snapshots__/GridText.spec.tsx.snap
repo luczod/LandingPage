@@ -78,15 +78,15 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
         >
           My grid
         </h1>
-        <p
+        <div
           class="c5 c6"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c7"
         >
-          <div
+          <article
             class="c8"
           >
             <h1
@@ -94,13 +94,13 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
             >
               Teste 1
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-            </p>
-          </div>
-          <div
+            </div>
+          </article>
+          <article
             class="c8"
           >
             <h1
@@ -108,13 +108,13 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
             >
               Teste 2
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-            </p>
-          </div>
-          <div
+            </div>
+          </article>
+          <article
             class="c8"
           >
             <h1
@@ -122,12 +122,12 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
             >
               Teste 3
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-            </p>
-          </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>

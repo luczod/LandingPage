@@ -49,9 +49,67 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
   transform: scale(1.2) rotate(10deg);
 }
 
+.c9 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 0.3);
+  border-radius: 1rem;
+}
+
+.c9>span {
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 35px;
+  color: #dc143c;
+  font-size: 5.6rem;
+}
+
+.c9>span::hover {
+  color: #FFFFFF;
+}
+
+.c9>img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.c9>div {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  padding: 10px 0;
+  height: 150px;
+}
+
 @media (max-width:768px) {
   .c3 {
     font-size: 4.0rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c9>span {
+    right: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c9>img {
+    width: 100%;
+    padding: 0 0.8rem;
   }
 }
 
@@ -70,11 +128,11 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
         >
           My image grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -86,6 +144,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=1"
             />
+            <div
+              class="c9"
+              id="Teste 1"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 1"
+                src="https://source.unsplash.com/random/800x800?r=1"
+              />
+              <div>
+                Teste 1
+              </div>
+            </div>
           </div>
           <div
             class="c7"
@@ -95,6 +168,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=2"
             />
+            <div
+              class="c9"
+              id="Teste 2"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 2"
+                src="https://source.unsplash.com/random/800x800?r=2"
+              />
+              <div>
+                Teste 2
+              </div>
+            </div>
           </div>
           <div
             class="c7"
@@ -104,6 +192,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=3"
             />
+            <div
+              class="c9"
+              id="Teste 3"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 3"
+                src="https://source.unsplash.com/random/800x800?r=3"
+              />
+              <div>
+                Teste 3
+              </div>
+            </div>
           </div>
           <div
             class="c7"
@@ -113,6 +216,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=4"
             />
+            <div
+              class="c9"
+              id="Teste 4"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 4"
+                src="https://source.unsplash.com/random/800x800?r=4"
+              />
+              <div>
+                Teste 4
+              </div>
+            </div>
           </div>
           <div
             class="c7"
@@ -122,6 +240,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=5"
             />
+            <div
+              class="c9"
+              id="Teste 5"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 5"
+                src="https://source.unsplash.com/random/800x800?r=5"
+              />
+              <div>
+                Teste 5
+              </div>
+            </div>
           </div>
           <div
             class="c7"
@@ -131,6 +264,21 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=6"
             />
+            <div
+              class="c9"
+              id="Teste 6"
+            >
+              <span>
+                ×
+              </span>
+              <img
+                alt="Teste 6"
+                src="https://source.unsplash.com/random/800x800?r=6"
+              />
+              <div>
+                Teste 6
+              </div>
+            </div>
           </div>
         </div>
       </div>

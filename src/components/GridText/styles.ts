@@ -19,7 +19,7 @@ export const Grid = styled.div`
   `}
 `;
 
-export const GridItem = styled.div`
+export const GridItem = styled.article`
   ${({ theme }) => css`
     ${ItemTitle} {
       position: relative;
