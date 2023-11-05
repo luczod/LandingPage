@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Menu/> should not render links 1`] = `
+exports[`<Menu/> > should not render links 1`] = `
 .c3 {
   max-width: 120rem;
   margin: 0 auto;
@@ -179,7 +179,7 @@ exports[`<Menu/> should not render links 1`] = `
 </div>
 `;
 
-exports[`<Menu/> should render Logo and Main menu Nav 1`] = `
+exports[`<Menu/> > should render Logo and Main menu Nav 1`] = `
 .c3 {
   max-width: 120rem;
   margin: 0 auto;

@@ -2,7 +2,7 @@ import { screen } from "@testing-library/react";
 import { renderTheme } from "../../styles/render-theme";
 import { NavLinks } from ".";
 import { linksList } from "./mock";
-import { themefn } from "../../styles/themefn";
+import { expect, it, describe } from "vitest";
 //jest -t NavLinks name-of-spec
 
 describe("<NavLinks/>", () => {

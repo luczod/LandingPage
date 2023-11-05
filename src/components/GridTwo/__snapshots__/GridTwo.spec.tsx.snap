@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<GridTwo/> should render two columns grid 1`] = `
+exports[`<GridTwo/> > should render two columns grid 1`] = `
 .c5 {
   color: #FFFFFF;
   font-size: 4.0rem;

@@ -14,7 +14,7 @@ export function GridContent({ title, html, bg = false }: IGridContentProps) {
   return (
     <SectionBackground background={bg}>
       <S.Container>
-        <Heading variant="h2" upperTitle colorDark={!bg}>
+        <Heading upperTitle colorDark={!bg}>
           {title}
         </Heading>
         <S.HtmlWrap>

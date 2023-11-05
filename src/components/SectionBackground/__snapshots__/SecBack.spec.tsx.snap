@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<SectionBackground/> should Match snapshot 1`] = `
+exports[`<SectionBackground/> > should Match snapshot 1`] = `
 <h1>
   Texto
 </h1>
 `;
 
-exports[`<SectionBackground/> should Match snapshot 2`] = `
+exports[`<SectionBackground/> > should Match snapshot 2`] = `
 .c0 {
   background-color: #FFFFFF;
   color: #0A1128;

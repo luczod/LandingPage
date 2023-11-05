@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<NavLinks/> parentElement should Match snapshot 1`] = `
+exports[`<NavLinks/> > parentElement should Match snapshot 1`] = `
 .c0 {
   color: #FFFFFF;
   display: flex;
@@ -116,7 +116,7 @@ exports[`<NavLinks/> parentElement should Match snapshot 1`] = `
 </nav>
 `;
 
-exports[`<NavLinks/> should Match snapshot 1`] = `
+exports[`<NavLinks/> > should Match snapshot 1`] = `
 [
   .c0 {
   color: #0A1128;

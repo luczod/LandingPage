@@ -16,7 +16,7 @@ export function GridTwo({ title, srcImg, text, bg = false }: IGridTwoProps) {
     <SectionBackground background={bg}>
       <S.Container background={bg}>
         <S.TextColumn>
-          <Heading variant="h2" upperTitle colorDark={!bg}>
+          <Heading upperTitle colorDark={!bg}>
             {title}
           </Heading>
           <Textfn htmlfn={text} />

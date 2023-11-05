@@ -1,5 +1,6 @@
 import { renderTheme } from "../../styles/render-theme";
 import { GridText } from ".";
+import { expect, it, describe } from "vitest";
 import mock from "./mock";
 
 describe("<GridText/>", () => {

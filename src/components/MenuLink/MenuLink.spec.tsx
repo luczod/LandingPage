@@ -1,4 +1,4 @@
-import { screen } from "@testing-library/react";
+import { expect, it, describe } from "vitest";
 import { renderTheme } from "../../styles/render-theme";
 import { MenuLink } from ".";
 
