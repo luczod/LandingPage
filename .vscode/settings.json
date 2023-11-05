@@ -8,5 +8,6 @@
   "colorize.languages": [
     "typescript"
     // ...
-  ]
+  ],
+  "testing.automaticallyOpenPeekView": "never"
 }
