@@ -5,6 +5,6 @@ import mock from "./mock";
 describe("<GridText/>", () => {
   it("should render texts in a grid", () => {
     const { container } = renderTheme(<GridText {...mock} />);
-    expect(container).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

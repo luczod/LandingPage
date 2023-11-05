@@ -12,7 +12,7 @@ export default {
     colorDark: true,
     upperTitle: false,
     size: "small",
-    variant: "h2",
+    as: "h2",
   },
   argTypes: {
     children: { type: "string" },

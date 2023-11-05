@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 
 describe("<Heading/>", () => {
   it("should render with default values", () => {
-    const { container } = renderTheme(<Heading variant="h2">Texto</Heading>);
+    const { container } = renderTheme(<Heading as="h2">Texto</Heading>);
     expect(container.firstChild).toHaveStyle({
       color: themefn.colors.primaryColor,
       "font-size": themefn.font.sizes.xl,
@@ -80,7 +80,7 @@ describe("<Heading/>", () => {
   });
 
   it("should render correct heading element", () => {
-    const { container } = renderTheme(<Heading variant="h4">texto</Heading>);
+    const { container } = renderTheme(<Heading as="h4">texto</Heading>);
     const h4 = container.querySelector("h4");
 
     expect(h4?.tagName.toLowerCase()).toBe("h4");

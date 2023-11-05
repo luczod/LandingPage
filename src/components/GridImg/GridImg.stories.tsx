@@ -2,16 +2,15 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
 import { GridImg, IGridImgProps } from ".";
+import mock from "./mock";
 
 export default {
   title: "GridImg",
   component: GridImg,
 
-  args: {
-    children: "GridImg",
-  },
+  args: mock,
   argTypes: {
-    children: { type: "string" },
+    title: { type: "string" },
   },
   parameters: {
     backgrounds: {

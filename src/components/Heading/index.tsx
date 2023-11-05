@@ -5,7 +5,7 @@ import * as S from "./styles";
 export interface IHeadingProps {
   colorDark?: boolean;
   children: ReactNode;
-  variant?: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
+  as?: OverridableStringUnion<"h1" | "h2" | "h3" | "h4">;
   size?: OverridableStringUnion<"small" | "medium" | "big" | "huge">;
   upperTitle?: boolean;
 }
@@ -13,17 +13,12 @@ export interface IHeadingProps {
 export function Heading({
   children,
   colorDark = true,
-  variant = "h1",
+  as = "h1",
   size = "big",
   upperTitle = false,
 }: IHeadingProps) {
   return (
-    <S.Title
-      colorDark={colorDark}
-      upperTitle={upperTitle}
-      as={variant}
-      size={size}
-    >
+    <S.Title colorDark={colorDark} upperTitle={upperTitle} as={as} size={size}>
       {children}
     </S.Title>
   );

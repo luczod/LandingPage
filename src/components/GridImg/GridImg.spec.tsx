@@ -1,14 +1,10 @@
-import { screen } from "@testing-library/react";
 import { renderTheme } from "../../styles/render-theme";
 import { GridImg } from ".";
+import mock from "./mock";
 
 describe("<GridImg/>", () => {
-  it("should render", () => {
-    renderTheme(
-      <GridImg>
-        <h1>Texto</h1>
-      </GridImg>
-    );
-    expect(screen.getByRole("heading", { name: "Texto" })).toBeInTheDocument();
+  it("should render images in a grid", () => {
+    const { container } = renderTheme(<GridImg {...mock} />);
+    expect(container).toMatchSnapshot();
   });
 });
