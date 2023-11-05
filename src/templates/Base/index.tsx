@@ -22,8 +22,8 @@ export function Base({
   return (
     <>
       <Menu Links={Links} logoData={logoData} />
+      {children}
       <S.Container>
-        {children}
         <Footer htmlfn={footerHtml} />
       </S.Container>
       <GoTop />

@@ -6,21 +6,23 @@ import { GridText } from "../../components/GridText";
 import Gridmock from "../../components/GridText/mock";
 import mock from "./mock";
 
+export const MockBase = {
+  children: (
+    <>
+      <GridText {...Gridmock} bg />
+      <GridText {...Gridmock} />
+      <GridText {...Gridmock} bg />
+      <GridText {...Gridmock} />
+    </>
+  ),
+  ...mock,
+};
+
 export default {
   title: "Templates/Base",
   component: Base,
 
-  args: {
-    children: (
-      <>
-        <GridText {...Gridmock} bg />
-        <GridText {...Gridmock} />
-        <GridText {...Gridmock} bg />
-        <GridText {...Gridmock} />
-      </>
-    ),
-    ...mock,
-  },
+  args: MockBase,
   parameters: {
     backgrounds: {
       default: "light",

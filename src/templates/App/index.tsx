@@ -1,11 +1,7 @@
 import * as S from "./styles";
+import { MockBase } from "../Base/Base.stories";
+import { Base } from "../Base";
 
 export function Home() {
-  return (
-    <div className="App">
-      <S.Wrapper>
-        <h1>Hello</h1>
-      </S.Wrapper>
-    </div>
-  );
+  return <Base {...MockBase} />;
 }
