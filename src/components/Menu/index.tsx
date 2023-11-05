@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import * as S from "./styles";
 import { SectionContainer } from "../SectionContainer";
 import { LogoLink } from "../LogoLink";
