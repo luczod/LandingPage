@@ -1,6 +1,5 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { renderTheme } from "../../styles/render-theme";
-import { expect, it, describe } from "vitest";
 import { Menu } from ".";
 import { linksList } from "../NavLinks/mock";
 import { themefn } from "../../styles/themefn";
