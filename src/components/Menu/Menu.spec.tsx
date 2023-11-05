@@ -26,29 +26,29 @@ describe("<Menu/>", () => {
   it("should render menu mobile and button", () => {
     renderTheme(<Menu Links={linksList} logoData={logoData} />);
     const btn = screen.getByLabelText("Open/close menu");
-    const menuContainer = screen.getByLabelText("wrap");
+    const menuWrap = screen.getByLabelText("wrap");
 
     expect(btn).toHaveStyleRule("display", "none");
     expect(btn).toHaveStyleRule("display", "flex", {
       media: themefn.media.lteMedium,
     });
 
-    expect(menuContainer).toHaveStyleRule("opacity", "0", {
-      media: themefn.media.lteMedium,
-    });
-    expect(screen.getByLabelText("Close menu")).toBeInTheDocument();
-
-    fireEvent.click(btn);
-    expect(menuContainer).toHaveStyleRule("opacity", "1", {
+    expect(menuWrap).toHaveStyleRule("visibility", "hidden", {
       media: themefn.media.lteMedium,
     });
     expect(screen.getByLabelText("Open menu")).toBeInTheDocument();
 
-    fireEvent.click(menuContainer);
-    expect(menuContainer).toHaveStyleRule("opacity", "0", {
+    fireEvent.click(btn);
+    expect(menuWrap).toHaveStyleRule("visibility", "visible", {
       media: themefn.media.lteMedium,
     });
     expect(screen.getByLabelText("Close menu")).toBeInTheDocument();
+
+    fireEvent.click(menuWrap);
+    expect(menuWrap).toHaveStyleRule("visibility", "hidden", {
+      media: themefn.media.lteMedium,
+    });
+    expect(screen.getByLabelText("Open menu")).toBeInTheDocument();
   });
 
   it("should not render links", () => {

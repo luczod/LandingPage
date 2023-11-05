@@ -19,6 +19,8 @@ export const Container = styled.div<IProps>`
     left: 0;
     right: 0;
     transition: all 300ms ease-in-out;
+    background: ${theme.colors.white};
+    border: 0.1rem solid ${theme.colors.mediumGray};
 
     > ${SectionContainer} {
       padding-top: 0;
@@ -37,12 +39,10 @@ export const Container = styled.div<IProps>`
       ${visible && menuVisible()}
 
       > ${SectionContainer} {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        height: 100vh;
-        align-items: center;
-        overflow-y: auto;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
       }
 
       & ${Heading} {
@@ -56,16 +56,20 @@ export const Container = styled.div<IProps>`
 
 export const MenuContainer = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.white};
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.1rem solid ${theme.colors.mediumGray};
 
     @media ${theme.media.lteMedium} {
-      display: block;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
       text-align: center;
+      min-height: 100vh;
+      height: 100%;
+      overflow-y: auto;
       padding: ${theme.spacings.xxl} 0;
+      cursor: pointer;
     }
   `}
 `;

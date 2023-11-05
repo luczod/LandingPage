@@ -6,6 +6,7 @@ exports[`<LogoLink/> > should Match snapshot 1`] = `
   display: flex;
   text-decoration: none;
   align-items: center;
+  padding: 1rem;
 }
 
 .c1 >img {

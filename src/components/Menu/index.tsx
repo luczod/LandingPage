@@ -19,8 +19,8 @@ export function Menu({ Links = [], logoData }: IMenuProps) {
         onClick={() => setVisible(true)}
         aria-label="Open/close menu"
       >
-        {visible && <MenuIcon size={32} aria-label="Open menu" />}
-        {!visible && <XIcon size={32} aria-label="Close menu" />}
+        {visible && <XIcon size={32} aria-label="Close menu" />}
+        {!visible && <MenuIcon size={32} aria-label="Open menu" />}
       </S.Btn>
       <S.Container
         aria-label="wrap"

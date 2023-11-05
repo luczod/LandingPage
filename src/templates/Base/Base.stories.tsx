@@ -2,21 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../../styles/global-styles";
 import { themefn } from "../../styles/themefn";
 import { Base, IBaseProps } from ".";
-import { GridText } from "../../components/GridText";
-import Gridmock from "../../components/GridText/mock";
-import mock from "./mock";
-
-export const MockBase = {
-  children: (
-    <>
-      <GridText {...Gridmock} bg />
-      <GridText {...Gridmock} />
-      <GridText {...Gridmock} bg />
-      <GridText {...Gridmock} />
-    </>
-  ),
-  ...mock,
-};
+import { MockBase } from "./mock";
 
 export default {
   title: "Templates/Base",
