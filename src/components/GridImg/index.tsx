@@ -43,13 +43,19 @@ export function GridImg({
             <S.GridItem key={item.srcImg}>
               <S.Image
                 onClick={() => OpenModal(item.altText)}
+                aria-label="item-img"
                 src={item.srcImg}
                 alt={item.altText}
               />
 
-              <S.ModalImg id={item.altText}>
-                <span onClick={() => CloseModal(item.altText)}>&times;</span>
+              <S.ModalImg id={item.altText} aria-label="Modal">
                 <img src={item.srcImg} alt={item.altText} />
+                <span
+                  aria-label="Close"
+                  onClick={() => CloseModal(item.altText)}
+                >
+                  &times;
+                </span>
                 <div>{item.altText}</div>
               </S.ModalImg>
             </S.GridItem>

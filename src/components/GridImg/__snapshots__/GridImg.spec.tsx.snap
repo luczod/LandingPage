@@ -141,20 +141,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 1"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=1"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 1"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 1"
                 src="https://source.unsplash.com/random/800x800?r=1"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 1
               </div>
@@ -165,20 +169,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 2"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=2"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 2"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 2"
                 src="https://source.unsplash.com/random/800x800?r=2"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 2
               </div>
@@ -189,20 +197,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 3"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=3"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 3"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 3"
                 src="https://source.unsplash.com/random/800x800?r=3"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 3
               </div>
@@ -213,20 +225,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 4"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=4"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 4"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 4"
                 src="https://source.unsplash.com/random/800x800?r=4"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 4
               </div>
@@ -237,20 +253,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 5"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=5"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 5"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 5"
                 src="https://source.unsplash.com/random/800x800?r=5"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 5
               </div>
@@ -261,20 +281,24 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
           >
             <img
               alt="Teste 6"
+              aria-label="item-img"
               class="c8"
               src="https://source.unsplash.com/random/800x800?r=6"
             />
             <div
+              aria-label="Modal"
               class="c9"
               id="Teste 6"
             >
-              <span>
-                ×
-              </span>
               <img
                 alt="Teste 6"
                 src="https://source.unsplash.com/random/800x800?r=6"
               />
+              <span
+                aria-label="Close"
+              >
+                ×
+              </span>
               <div>
                 Teste 6
               </div>

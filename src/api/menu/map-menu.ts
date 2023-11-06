@@ -1,5 +1,5 @@
-import { IMenuObj, Menu } from "../utils/interfaces";
-import { NoArgs } from "./noArgs";
+import { IMenuObj, Menu } from "../../utils/interfaces";
+import { NoArgs } from "../noArgs";
 
 export function mapMenu(pageMenu?: IMenuObj) {
   if (!pageMenu) {
@@ -37,4 +37,4 @@ export const mapMenuLinks = (links?: Menu[]) => {
   });
 };
 
-console.log(mapMenuLinks());
+// console.log(mapMenuLinks());

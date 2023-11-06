@@ -20,4 +20,19 @@ export const NoArgs = {
     srcImg: "",
     links: [],
   },
+  sectionEmpty: {
+    component: "",
+    title: "",
+    text: "",
+    srcImg: "",
+    background: false,
+    sectionId: "",
+  },
+  sectionContent: {
+    component: "",
+    title: "",
+    html: "",
+    background: false,
+    sectionId: "",
+  },
 };

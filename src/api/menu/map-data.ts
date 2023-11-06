@@ -1,6 +1,6 @@
-import dados from "./dados.json";
+import dados from "../dados.json";
 import { inspect } from "util";
-import { NoArgs } from "./noArgs";
+import { NoArgs } from "../noArgs";
 interface IPageObj {
   footer_text: string;
   slug: string;
@@ -22,10 +22,3 @@ export function mapData(pagesData: Array<IPageObj> = [NoArgs.pages]) {
     };
   });
 }
-
-function viewFileJson() {
-  console.log(inspect(mapData(dados), false, null, true));
-  return;
-}
-const x = JSON.parse(JSON.stringify(dados));
-console.log(Object.keys(x[0].menu));
