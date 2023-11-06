@@ -8,10 +8,10 @@ export default {
   component: Footer,
 
   args: {
-    htmlfn: `<p><a href="#">powered by lucas</a></p>`,
+    footerHtml: `<p><a href="#">powered by lucas</a></p>`,
   },
   argTypes: {
-    htmlfn: { type: "string" },
+    footerHtml: { type: "string" },
   },
   parameters: {
     backgrounds: {

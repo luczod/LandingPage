@@ -4,14 +4,14 @@ import { Textfn } from "../Textfn";
 import { SectionContainer } from "../SectionContainer";
 
 export interface IFooterProps {
-  htmlfn: string;
+  footerHtml: string;
 }
 
-export function Footer({ htmlfn }: IFooterProps) {
+export function Footer({ footerHtml }: IFooterProps) {
   return (
     <S.Container>
       <SectionContainer>
-        <Textfn htmlfn={htmlfn} />
+        <Textfn htmlfn={footerHtml} />
       </SectionContainer>
     </S.Container>
   );

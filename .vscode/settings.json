@@ -1,10 +1,15 @@
 {
+  "code-runner.executorMap": {
+    "typescript": "npx sucrase-node"
+  },
+  "code-runner.clearPreviousOutput": true,
   "vsicons.associations.folders": [
     {
       "icon": "test",
       "extensions": ["__snapshots__"]
     }
   ],
+
   "colorize.languages": [
     "typescript"
     // ...
