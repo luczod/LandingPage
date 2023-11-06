@@ -51,7 +51,7 @@ export function GridImg({
               <S.ModalImg id={item.altText} aria-label="Modal">
                 <img src={item.srcImg} alt={item.altText} />
                 <span
-                  aria-label="Close"
+                  aria-label="Close-img"
                   onClick={() => CloseModal(item.altText)}
                 >
                   &times;
