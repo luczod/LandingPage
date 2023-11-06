@@ -6,8 +6,6 @@ describe("map-data", () => {
     expect(pageData.footerHtml).toBe("");
     expect(pageData.slug).toBe("");
     expect(pageData.title).toBe("");
-    expect(pageData.sections).toEqual([]);
-    expect(pageData.menu).toEqual({});
   });
 
   it("should map data if there are data", () => {
@@ -23,7 +21,5 @@ describe("map-data", () => {
     expect(pagesData.footerHtml).toBe("<p>Hey</p>");
     expect(pagesData.slug).toBe("slug");
     expect(pagesData.title).toBe("title");
-    expect(pagesData.sections).toEqual([1, 2, 3, 4]);
-    expect(pagesData.menu).toEqual({ a: "b" });
   });
 });

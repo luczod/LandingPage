@@ -1,3 +1,6 @@
+import dados from "./dados.json";
+import { inspect } from "util";
+import { NoArgs } from "./noArgs";
 interface IPageObj {
   footer_text: string;
   slug: string;
@@ -6,15 +9,7 @@ interface IPageObj {
   menu: object;
 }
 
-const noPages = {
-  footer_text: "",
-  slug: "",
-  title: "",
-  sections: [],
-  menu: {},
-};
-
-export function mapData(pagesData: Array<IPageObj> = [noPages]) {
+export function mapData(pagesData: Array<IPageObj> = [NoArgs.pages]) {
   return pagesData.map((data) => {
     const { footer_text: footerHtml, slug, title, sections, menu } = data;
 
@@ -28,4 +23,9 @@ export function mapData(pagesData: Array<IPageObj> = [noPages]) {
   });
 }
 
-console.log(mapData());
+function viewFileJson() {
+  console.log(inspect(mapData(dados), false, null, true));
+  return;
+}
+const x = JSON.parse(JSON.stringify(dados));
+console.log(Object.keys(x[0].menu));
