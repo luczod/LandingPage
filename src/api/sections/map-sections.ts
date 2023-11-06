@@ -1,4 +1,9 @@
-import { Section, SectionContent } from "../../utils/interfaces";
+import {
+  GridImg,
+  GridText,
+  Section,
+  SectionContent,
+} from "../../utils/interfaces";
 import { NoArgs } from "../noArgs";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -14,7 +19,13 @@ export function mapSections(sections?: Array<any>) {
       return mapSectionContent(section);
     }
     if (section.__component === "section.section-grid") {
-      return mapSectionGrid(section);
+      const {
+        __component: { text_grid = [], image_grid = [] },
+      } = section;
+
+      if (text_grid.length > 0) {
+        return mapTextGrid(section);
+      }
     }
 
     return section;
@@ -63,6 +74,54 @@ export function mapSectionContent(section?: SectionContent) {
   };
 }
 
-export const mapSectionGrid = (section: Section) => {
-  return section;
-};
+export function mapTextGrid(section?: GridText) {
+  if (!section) {
+    return NoArgs.gridText;
+  }
+  const {
+    __component: component,
+    title,
+    description,
+    text_grid: grid,
+    metadata: { background, section_id: sectionId },
+  } = section;
+
+  return {
+    component: "section.section-grid-text",
+    title,
+    background,
+    sectionId,
+    description,
+    grid,
+  };
+}
+
+export function mapImgGrid(section?: GridImg) {
+  if (!section) {
+    return NoArgs.gridText;
+  }
+  const {
+    __component: component,
+    title,
+    description,
+    image_grid: grid,
+    metadata: { background, section_id: sectionId },
+  } = section;
+
+  return {
+    component: "section.section-grid-image",
+    title,
+    background,
+    sectionId,
+    description,
+    grid: grid.map((img) => {
+      const {
+        image: { url: srcImg = "", alternativeText: altText = "" },
+      } = img;
+      return {
+        srcImg,
+        altText,
+      };
+    }),
+  };
+}

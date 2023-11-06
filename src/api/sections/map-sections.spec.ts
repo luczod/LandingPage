@@ -1,7 +1,9 @@
 import {
+  mapImgGrid,
   mapSectionContent,
   mapSectionTwoColumns,
   mapSections,
+  mapTextGrid,
 } from "./map-sections";
 
 describe("map-sections", () => {
@@ -27,25 +29,12 @@ describe("map-sections", () => {
       description: "abc",
       metadata: {
         background: true,
-        _id: "602fdf2d540c00269e05617b",
         name: "contact",
         section_id: "contact",
-        __v: 0,
-        id: "602fdf2d540c00269e05617b",
       },
       image: {
-        _id: "602fdc2b540c00269e05616a",
-        name: "javascript.svg",
         alternativeText: "Desenho de pessoas segurando logos do CSS, JS e HTML",
-        caption: "Desenho de pessoas segurando logos do CSS, JS e HTML",
-        ext: ".svg",
-        mime: "image/svg+xml",
-        size: 30.31,
         url: "a.svg",
-        provider_metadata: {
-          public_id: "javascript_b57bf48cda",
-          resource_type: "image",
-        },
       },
     });
     expect(data.background).toBe(true);
@@ -72,11 +61,8 @@ describe("map-sections", () => {
       content: "abc",
       metadata: {
         background: false,
-        _id: "602fdf2d540c00269e056179",
         name: "pricing",
         section_id: "pricing",
-        __v: 0,
-        id: "602fdf2d540c00269e056179",
       },
     });
     expect(data.background).toBe(false);
@@ -84,5 +70,95 @@ describe("map-sections", () => {
     expect(data.sectionId).toBe("pricing");
     expect(data.title).toBe("Pricing");
     expect(data.html).toBe("abc");
+  });
+
+  it("should map grid text with data", () => {
+    const data = mapTextGrid({
+      __component: "section.section-grid",
+      description: "abc",
+      title: "My Grid",
+      text_grid: [
+        {
+          title: "Teste 1",
+          description: "Coisa",
+        },
+        {
+          title: "Teste 2",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
+        },
+        {
+          title: "Teste 3",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
+        },
+      ],
+      metadata: {
+        background: true,
+        name: "grid-one",
+        section_id: "grid-one",
+      },
+    });
+    expect(data.background).toBe(true);
+    expect(data.component).toBe("section.section-grid-text");
+    expect(data.sectionId).toBe("grid-one");
+    expect(data.title).toBe("My Grid");
+    expect(data.description).toBe("abc");
+    if (Array.isArray(data.grid)) {
+      expect(data.grid[0].title).toBe("Teste 1");
+      expect(data.grid[0].description).toBe("Coisa");
+    }
+  });
+
+  it("should map grid text if no data", () => {
+    const data = mapTextGrid();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe("");
+    expect(data.sectionId).toBe("");
+    expect(data.title).toBe("");
+    expect(data.description).toBe("");
+  });
+
+  it("should map grid image with data", () => {
+    const data = mapImgGrid({
+      __component: "section.section-grid",
+      description: "abc",
+      title: "Gallery",
+      image_grid: [
+        {
+          image: {
+            alternativeText: "abc",
+            url: "a.svg",
+          },
+        },
+        {
+          image: {
+            alternativeText: "Um livro grande aberto",
+            url: "a.svg",
+          },
+        },
+      ],
+      metadata: {
+        background: false,
+        name: "gallery",
+        section_id: "gallery",
+      },
+    });
+    expect(data.background).toBe(false);
+    expect(data.component).toBe("section.section-grid-image");
+    expect(data.sectionId).toBe("gallery");
+    expect(data.title).toBe("Gallery");
+    expect(data.description).toBe("abc");
+    expect(data.grid[0].srcImg).toBe("a.svg");
+    expect(data.grid[0].altText).toBe("abc");
+  });
+
+  it("should map grid image if no data", () => {
+    const data = mapImgGrid();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe("");
+    expect(data.sectionId).toBe("");
+    expect(data.title).toBe("");
+    expect(data.description).toBe("");
   });
 });

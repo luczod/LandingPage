@@ -35,4 +35,13 @@ export const NoArgs = {
     background: false,
     sectionId: "",
   },
+
+  gridText: {
+    component: "",
+    title: "",
+    description: "",
+    background: false,
+    sectionId: "",
+    grid: [],
+  },
 };

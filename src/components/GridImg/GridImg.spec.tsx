@@ -18,6 +18,6 @@ describe("<GridImg/>", () => {
     expect(modal).toHaveStyle({ display: "block" });
 
     fireEvent.click(closeModal);
-    expect(modal).toHaveStyle({ display: "nonqe" });
+    expect(modal).toHaveStyle({ display: "none" });
   });
 });

@@ -11,11 +11,35 @@ export interface Section {
   image: Image;
   metadata: {
     background: boolean;
-    _id: string;
     name: string;
     section_id: string;
-    __v: number;
-    id: string;
+  };
+}
+
+export interface GridText {
+  __component: string;
+  title: string;
+  description: string;
+  text_grid: Array<{
+    title: string;
+    description: string;
+  }>;
+  metadata: {
+    background: boolean;
+    name: string;
+    section_id: string;
+  };
+}
+
+export interface GridImg {
+  __component: string;
+  title: string;
+  description: string;
+  image_grid: Array<{ image: Image }>;
+  metadata: {
+    background: boolean;
+    name: string;
+    section_id: string;
   };
 }
 
@@ -25,11 +49,8 @@ export interface SectionContent {
   content: string;
   metadata: {
     background: boolean;
-    _id: string;
     name: string;
     section_id: string;
-    __v: number;
-    id: string;
   };
 }
 
@@ -52,13 +73,6 @@ export interface IMenuObj {
 }
 
 export interface Image {
-  _id: string;
-  name: string;
   alternativeText: string;
-  caption: string;
-  ext: string;
-  mime: string;
-  size: number;
   url: string;
-  provider_metadata: Provider_metadata;
 }
