@@ -55,15 +55,15 @@ export const ModalImg = styled.div`
     & > span {
       position: fixed;
       cursor: pointer;
-      top: 15px;
-      right: 35px;
+      top: 4rem;
+      right: 2rem;
       color: ${theme.colors.secondaryColor};
       font-size: ${theme.font.sizes.hg};
       &::hover {
         color: ${theme.colors.white};
       }
       @media only screen and (max-width: 768px) {
-        right: 16px;
+        left: 1rem;
       }
     }
 

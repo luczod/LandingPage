@@ -19,7 +19,7 @@ export function Home() {
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
         setData(() => pageData[0]);
-        console.log(data);
+        console.log(pageData[0]);
       } catch {
         setData(undefined);
       }
