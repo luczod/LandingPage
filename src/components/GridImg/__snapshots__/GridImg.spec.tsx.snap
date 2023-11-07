@@ -65,8 +65,8 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
 .c9>span {
   position: fixed;
   cursor: pointer;
-  top: 15px;
-  right: 35px;
+  top: 4rem;
+  right: 2rem;
   color: #dc143c;
   font-size: 5.6rem;
 }
@@ -102,7 +102,7 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
 
 @media only screen and (max-width: 768px) {
   .c9>span {
-    right: 16px;
+    left: 1rem;
   }
 }
 

@@ -25,6 +25,7 @@ export const Grid = styled.div`
 export const GridItem = styled.div`
   ${({ theme }) => css`
     overflow: hidden;
+    border-radius: 1rem;
   `}
 `;
 
@@ -72,6 +73,7 @@ export const ModalImg = styled.div`
       display: block;
       width: 80%;
       max-width: 700px;
+      border-radius: 1rem;
       /* 100% Image Width on Smaller Screens */
       @media only screen and (max-width: 768px) {
         width: 100%;

@@ -59,6 +59,8 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
 
     @media ${theme.media.lteMedium} {
       flex-flow: column nowrap;
