@@ -1,14 +1,20 @@
+import Gridmock from "../../components/GridText/mock";
+import Twomock from "../../components/GridTwo/mock";
+import Contentmock from "../../components/GridContent/mock";
+import Imgmock from "../../components/GridImg/mock";
 import { linksList } from "../../components/NavLinks/mock";
 import { GridText } from "../../components/GridText";
-import Gridmock from "../../components/GridText/mock";
+import { GridTwo } from "../../components/GridTwo";
+import { GridContent } from "../../components/GridContent";
+import { GridImg } from "../../components/GridImg";
 
 export const MockBase = {
   children: (
     <>
-      <GridText {...Gridmock} bg />
+      <GridTwo {...Twomock} bg />
       <GridText {...Gridmock} />
-      <GridText {...Gridmock} bg />
-      <GridText {...Gridmock} />
+      <GridImg {...Imgmock} />
+      <GridContent {...Contentmock} />
     </>
   ),
   Links: linksList,

@@ -1,7 +1,7 @@
 import dados from "../dados.json";
 import { inspect } from "util";
 import { NoArgs } from "../noArgs";
-interface IPageObj {
+export interface IPageObj {
   footer_text: string;
   slug: string;
   title: string;
