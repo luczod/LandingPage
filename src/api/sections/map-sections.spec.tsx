@@ -5,11 +5,18 @@ import {
   mapSections,
   mapTextGrid,
 } from "./map-sections";
+import FakeData from "../dados.json";
+import { MockGridImg, MockGridText } from "./mock";
 
 describe("map-sections", () => {
   it("should render predefined section if no data", () => {
     const data = mapSections();
     expect(data).toEqual([]);
+  });
+
+  it("should render sections with data", () => {
+    const data = mapSections(FakeData[0].sections);
+    expect(data[0].component).toBe("section.section-two-columns");
   });
 
   it("should map predefined section two columns if no data", () => {
@@ -37,6 +44,7 @@ describe("map-sections", () => {
         url: "a.svg",
       },
     });
+
     expect(data.background).toBe(true);
     expect(data.component).toBe("section.section-two-columns");
     expect(data.sectionId).toBe("contact");
@@ -47,6 +55,7 @@ describe("map-sections", () => {
 
   it("should map section content if no data", () => {
     const data = mapSectionContent();
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("");
     expect(data.sectionId).toBe("");
@@ -65,6 +74,7 @@ describe("map-sections", () => {
         section_id: "pricing",
       },
     });
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("section.section-content");
     expect(data.sectionId).toBe("pricing");
@@ -73,32 +83,8 @@ describe("map-sections", () => {
   });
 
   it("should map grid text with data", () => {
-    const data = mapTextGrid({
-      __component: "section.section-grid",
-      description: "abc",
-      title: "My Grid",
-      text_grid: [
-        {
-          title: "Teste 1",
-          description: "Coisa",
-        },
-        {
-          title: "Teste 2",
-          description:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
-        },
-        {
-          title: "Teste 3",
-          description:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
-        },
-      ],
-      metadata: {
-        background: true,
-        name: "grid-one",
-        section_id: "grid-one",
-      },
-    });
+    const data = mapTextGrid(MockGridText);
+
     expect(data.background).toBe(true);
     expect(data.component).toBe("section.section-grid-text");
     expect(data.sectionId).toBe("grid-one");
@@ -112,6 +98,7 @@ describe("map-sections", () => {
 
   it("should map grid text if no data", () => {
     const data = mapTextGrid();
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("");
     expect(data.sectionId).toBe("");
@@ -120,30 +107,8 @@ describe("map-sections", () => {
   });
 
   it("should map grid image with data", () => {
-    const data = mapImgGrid({
-      __component: "section.section-grid",
-      description: "abc",
-      title: "Gallery",
-      image_grid: [
-        {
-          image: {
-            alternativeText: "abc",
-            url: "a.svg",
-          },
-        },
-        {
-          image: {
-            alternativeText: "Um livro grande aberto",
-            url: "a.svg",
-          },
-        },
-      ],
-      metadata: {
-        background: false,
-        name: "gallery",
-        section_id: "gallery",
-      },
-    });
+    const data = mapImgGrid(MockGridImg);
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("section.section-grid-image");
     expect(data.sectionId).toBe("gallery");
@@ -155,6 +120,7 @@ describe("map-sections", () => {
 
   it("should map grid image if no data", () => {
     const data = mapImgGrid();
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("");
     expect(data.sectionId).toBe("");
