@@ -13,6 +13,7 @@ export const Container = styled.section<IPros>`
   ${({ theme, background }) => css`
     background-color: ${theme.colors.white};
     color: ${theme.colors.primaryColor};
+    border-bottom: 0.2rem solid ${theme.colors.mediumGray};
     ${background && containerBgActivate(theme)};
     min-height: 100vh;
     display: flex;

@@ -3,19 +3,20 @@ import { Heading } from "../Heading";
 import { Textfn } from "../Textfn";
 import * as S from "./styles";
 import { apiUrl } from "../../utils/endpoint";
+import { IImagGrid } from "../../utils/interfaces";
 
 export interface IGridImgProps {
   title: string;
   bg: boolean;
   description: string;
-  grid: Array<{ altText: string; srcImg: string; id: number }>;
+  img_grid: Array<IImagGrid>;
 }
 
 export function GridImg({
   title,
   description,
   bg = false,
-  grid,
+  img_grid: grid,
 }: IGridImgProps) {
   function OpenModal(id: string) {
     const modal = document.getElementById(id);
@@ -42,21 +43,24 @@ export function GridImg({
           {grid.map((item) => (
             <S.GridItem key={item.id}>
               <S.Image
-                onClick={() => OpenModal(item.altText)}
+                onClick={() => OpenModal(`GridImg-${item.id}`)}
                 aria-label="item-img"
-                src={apiUrl + item.srcImg}
-                alt={item.altText}
+                src={apiUrl + item.image.data[0].attributes.url}
+                alt={item.image.data[0].attributes.alternativeText}
               />
 
-              <S.ModalImg id={item.altText} aria-label="Modal">
-                <img src={apiUrl + item.srcImg} alt={item.altText} />
+              <S.ModalImg id={`GridImg-${item.id}`} aria-label="Modal">
+                <img
+                  src={apiUrl + item.image.data[0].attributes.url}
+                  alt={item.image.data[0].attributes.alternativeText}
+                />
                 <span
                   aria-label="Close-img"
-                  onClick={() => CloseModal(item.altText)}
+                  onClick={() => CloseModal(`GridImg-${item.id}`)}
                 >
                   &times;
                 </span>
-                <div>{item.altText}</div>
+                <div>{item.image.data[0].attributes.alternativeText}</div>
               </S.ModalImg>
             </S.GridItem>
           ))}

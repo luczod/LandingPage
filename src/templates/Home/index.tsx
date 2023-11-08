@@ -96,7 +96,7 @@ export function Home() {
             }
           }
 
-          if (component === "section.section-grid-image") {
+          if (component === "section.section-img") {
             return <GridImg key={key} {...section} />;
           }
         })

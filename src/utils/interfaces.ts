@@ -35,7 +35,7 @@ export interface GridImg {
   __component: string;
   title: string;
   description: string;
-  image_grid: Array<{ image: Image }>;
+  image_grid: Array<{ img_grid: Image }>;
   metadata: {
     background: boolean;
     name: string;
@@ -72,7 +72,22 @@ export interface IMenuObj {
   sections: Array<Section>;
 }
 
-export interface Image {
+export interface Attribute {
+  name: string;
   alternativeText: string;
   url: string;
+}
+
+export interface Data {
+  id: number;
+  attributes: Attribute;
+}
+
+export interface Image {
+  data: Data[];
+}
+
+export interface IImagGrid {
+  id: number;
+  image: Image;
 }
