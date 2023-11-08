@@ -1,17 +1,22 @@
-import { ReactNode } from "react";
 import * as S from "./styles";
 import { SectionBackground } from "../SectionBackground";
 import { Heading } from "../Heading";
 import { Textfn } from "../Textfn";
+import { apiUrl } from "../../utils/endpoint";
 
 export interface IGridTwoProps {
   title: string;
-  text: string;
+  description: string;
   srcImg: string;
   bg?: boolean;
 }
 
-export function GridTwo({ title, srcImg, text, bg = false }: IGridTwoProps) {
+export function GridTwo({
+  title,
+  srcImg,
+  description,
+  bg = true,
+}: IGridTwoProps) {
   return (
     <SectionBackground background={bg}>
       <S.Container background={bg}>
@@ -19,10 +24,10 @@ export function GridTwo({ title, srcImg, text, bg = false }: IGridTwoProps) {
           <Heading upperTitle colorDark={!bg}>
             {title}
           </Heading>
-          <Textfn htmlfn={text} />
+          <Textfn htmlfn={description} />
         </S.TextColumn>
         <S.ImgWrap>
-          <S.Imgfn src={srcImg} alt="img" />
+          <S.Imgfn src={apiUrl + srcImg} alt="img" />
         </S.ImgWrap>
       </S.Container>
     </SectionBackground>

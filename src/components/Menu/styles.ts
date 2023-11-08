@@ -11,7 +11,7 @@ const menuVisible = () => css`
   opacity: 1;
 `;
 
-export const Container = styled.div<IProps>`
+export const Container = styled.header<IProps>`
   ${({ theme, visible }) => css`
     position: fixed;
     z-index: 5;

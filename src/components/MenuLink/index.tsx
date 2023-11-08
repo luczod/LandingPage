@@ -2,16 +2,22 @@ import { ReactNode } from "react";
 import * as S from "./styles";
 
 export interface IMenuLinkProps {
-  children: ReactNode;
-  link?: string;
-  newTab?: boolean;
+  id: string;
+  link_text: string;
+  url?: string;
+  open_in_new_tab?: boolean;
 }
 
-export function MenuLink({ children, link, newTab = false }: IMenuLinkProps) {
-  const target = newTab ? "_blank" : "_self";
+export function MenuLink({
+  id,
+  link_text,
+  url,
+  open_in_new_tab = false,
+}: IMenuLinkProps) {
+  const target = open_in_new_tab ? "_blank" : "_self";
   return (
-    <S.Container href={link} target={target}>
-      {children}
+    <S.Container href={url} target={target}>
+      {link_text}
     </S.Container>
   );
 }

@@ -64,37 +64,35 @@ export function Home() {
   }
 
   const { menu, sections, footerHtml, slug } = dataHome;
-  const { menu_links, logo_text: text, logo_link: link } = menu;
-  const { url: srcImg } = menu.logo.data.attributes;
+  const { links, text, link, srcImg } = menu;
+  console.log(menu);
 
   return (
     <Base
-      Links={menu_links}
+      Links={links}
       footerHtml={footerHtml}
       logoData={{ text, link, srcImg }}
     >
       {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         sections.map((section: any, index: number) => {
-          const { __component: component } = section;
-          // const section.id = `${slug}-${index}`;
+          const { component } = section;
+          const key = `${slug}-${index}`;
 
           if (component === "section.section-two-columns") {
-            const { url } = section.image.data.attributes;
-            section.srcImg = url;
-            return <GridTwo key={section.id} {...section} />;
+            return <GridTwo key={key} {...section} />;
           }
 
           if (component === "section.section-content") {
-            return <GridContent key={section.id} {...section} />;
+            return <GridContent key={key} {...section} />;
           }
 
           if (component === "section.section-grid-text") {
-            return <GridText key={section.id} {...section} />;
+            return <GridText key={key} {...section} />;
           }
 
           if (component === "section.section-grid-image") {
-            return <GridImg key={section.id} {...section} />;
+            return <GridImg key={key} {...section} />;
           }
         })
       }

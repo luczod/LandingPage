@@ -4,14 +4,14 @@ import { MenuLink } from ".";
 describe("<MenuLink/>", () => {
   it("should render a link", () => {
     const { container } = renderTheme(
-      <MenuLink link="http://localhost">Children</MenuLink>
+      <MenuLink url="http://localhost">Children</MenuLink>
     );
     expect(container.firstChild).toHaveAttribute("target", "_self");
   });
 
   it("should render open in a new tab", () => {
     const { container } = renderTheme(
-      <MenuLink link="http://localhost" newTab={true}>
+      <MenuLink url="http://localhost" newTab={true}>
         Children
       </MenuLink>
     );
@@ -20,7 +20,7 @@ describe("<MenuLink/>", () => {
 
   it("should Match snapshot", () => {
     const { container } = renderTheme(
-      <MenuLink link="http://localhost" newTab={false}>
+      <MenuLink url="http://localhost" newTab={false}>
         Children
       </MenuLink>
     );

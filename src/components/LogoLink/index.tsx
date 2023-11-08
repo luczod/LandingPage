@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
 import * as S from "./styles";
 import { Heading } from "../Heading";
+import { apiUrl } from "../../utils/endpoint";
 
 export interface ILogoLinkProps {
   srcImg?: string;
@@ -12,7 +12,7 @@ export function LogoLink({ text, srcImg = "", link }: ILogoLinkProps) {
   return (
     <Heading size="small" upperTitle>
       <S.Container href={link}>
-        {!!srcImg && <img src={srcImg} alt={text} />}
+        {!!srcImg && <img src={apiUrl + srcImg} alt={text} />}
         {!srcImg && text}
       </S.Container>
     </Heading>
