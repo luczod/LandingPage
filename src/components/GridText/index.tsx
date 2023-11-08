@@ -7,14 +7,14 @@ export interface IGridTextProps {
   title: string;
   bg: boolean;
   description: string;
-  grid: Array<{ title: string; description: string }>;
+  text_grid: Array<{ title: string; id: string; description: string }>;
 }
 
 export function GridText({
   title,
   description,
   bg = false,
-  grid,
+  text_grid,
 }: IGridTextProps) {
   return (
     <SectionBackground background={bg}>
@@ -24,8 +24,8 @@ export function GridText({
         </Heading>
         <Textfn htmlfn={description} />
         <S.Grid>
-          {grid.map((item) => (
-            <S.GridItem key={item.title}>
+          {text_grid.map((item) => (
+            <S.GridItem key={item.id}>
               <Heading size="medium" colorDark={!bg}>
                 {item.title}
               </Heading>

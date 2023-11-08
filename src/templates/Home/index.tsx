@@ -77,24 +77,27 @@ export function Home() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         sections.map((section: any, index: number) => {
           const { __component: component } = section;
-          // const section.id = `${slug}-${index}`;
+          const key = `${component}-${section.id}`;
 
           if (component === "section.section-two-columns") {
             const { url } = section.image.data.attributes;
             section.srcImg = url;
-            return <GridTwo key={section.id} {...section} />;
+            return <GridTwo key={key} {...section} />;
           }
 
           if (component === "section.section-content") {
-            return <GridContent key={section.id} {...section} />;
+            return <GridContent key={key} {...section} />;
           }
 
-          if (component === "section.section-grid-text") {
-            return <GridText key={section.id} {...section} />;
+          if (component === "section.section-grid") {
+            const { text_grid } = section;
+            if (text_grid?.length > 1) {
+              return <GridText key={key} {...section} />;
+            }
           }
 
           if (component === "section.section-grid-image") {
-            return <GridImg key={section.id} {...section} />;
+            return <GridImg key={key} {...section} />;
           }
         })
       }

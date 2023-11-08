@@ -6,11 +6,11 @@ import { Textfn } from "../Textfn";
 
 export interface IGridContentProps {
   title: string;
-  html: string;
+  content: string;
   bg?: boolean;
 }
 
-export function GridContent({ title, html, bg = false }: IGridContentProps) {
+export function GridContent({ title, content, bg = false }: IGridContentProps) {
   return (
     <SectionBackground background={bg}>
       <S.Container>
@@ -18,7 +18,7 @@ export function GridContent({ title, html, bg = false }: IGridContentProps) {
           {title}
         </Heading>
         <S.HtmlWrap>
-          <Textfn htmlfn={html} />
+          <Textfn htmlfn={content} />
         </S.HtmlWrap>
       </S.Container>
     </SectionBackground>

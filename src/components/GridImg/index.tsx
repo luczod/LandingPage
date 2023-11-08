@@ -2,13 +2,13 @@ import { SectionBackground } from "../SectionBackground";
 import { Heading } from "../Heading";
 import { Textfn } from "../Textfn";
 import * as S from "./styles";
-import { useState } from "react";
+import { apiUrl } from "../../utils/endpoint";
 
 export interface IGridImgProps {
   title: string;
   bg: boolean;
   description: string;
-  grid: Array<{ altText: string; srcImg: string }>;
+  grid: Array<{ altText: string; srcImg: string; id: number }>;
 }
 
 export function GridImg({
@@ -40,16 +40,16 @@ export function GridImg({
         <Textfn htmlfn={description} />
         <S.Grid>
           {grid.map((item) => (
-            <S.GridItem key={item.srcImg}>
+            <S.GridItem key={item.id}>
               <S.Image
                 onClick={() => OpenModal(item.altText)}
                 aria-label="item-img"
-                src={item.srcImg}
+                src={apiUrl + item.srcImg}
                 alt={item.altText}
               />
 
               <S.ModalImg id={item.altText} aria-label="Modal">
-                <img src={item.srcImg} alt={item.altText} />
+                <img src={apiUrl + item.srcImg} alt={item.altText} />
                 <span
                   aria-label="Close-img"
                   onClick={() => CloseModal(item.altText)}
