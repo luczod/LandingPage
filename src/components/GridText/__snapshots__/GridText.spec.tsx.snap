@@ -48,6 +48,7 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
 .c0 {
   background-color: #FFFFFF;
   color: #0A1128;
+  border-bottom: 0.2rem solid #DDDDDD;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -56,7 +57,7 @@ exports[`<GridText/> > should render texts in a grid 1`] = `
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 4.0rem;
+  padding: 2.4rem;
 }
 
 @media (max-width:768px) {

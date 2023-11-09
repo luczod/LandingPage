@@ -4,7 +4,7 @@ exports[`<Base/> > should render base component 1`] = `
 .c10 {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 4.0rem;
+  padding: 2.4rem;
 }
 
 .c4 {
@@ -62,6 +62,8 @@ exports[`<Base/> > should render base component 1`] = `
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .c0 {
@@ -84,15 +86,15 @@ exports[`<Base/> > should render base component 1`] = `
 }
 
 .c5 {
+  text-decoration: none;
   color: inherit;
   display: flex;
-  text-decoration: none;
   align-items: center;
-  padding: 1rem;
 }
 
 .c5 >img {
-  max-height: 2.5rem;
+  height: 6rem;
+  width: 14rem;
 }
 
 .c6 {
@@ -205,6 +207,7 @@ exports[`<Base/> > should render base component 1`] = `
 .c8 {
   background-color: #FFFFFF;
   color: #0A1128;
+  border-bottom: 0.2rem solid #DDDDDD;
   background: #0A1128;
   color: #FFFFFF;
   min-height: 100vh;
@@ -215,6 +218,7 @@ exports[`<Base/> > should render base component 1`] = `
 .c16 {
   background-color: #FFFFFF;
   color: #0A1128;
+  border-bottom: 0.2rem solid #DDDDDD;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -233,12 +237,12 @@ exports[`<Base/> > should render base component 1`] = `
 
 .c27 {
   text-align: center;
-  max-width: 58rem;
+  padding: 0;
   margin: 0 auto;
 }
 
 .c29 {
-  margin: 4.0rem 0;
+  margin: 0;
 }
 
 .c22 >.c14 {
@@ -254,6 +258,7 @@ exports[`<Base/> > should render base component 1`] = `
 
 .c24 {
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .c25 {
@@ -296,6 +301,7 @@ exports[`<Base/> > should render base component 1`] = `
   display: block;
   width: 80%;
   max-width: 700px;
+  border-radius: 1rem;
 }
 
 .c26>div {
@@ -436,7 +442,7 @@ exports[`<Base/> > should render base component 1`] = `
       />
     </svg>
   </button>
-  <div
+  <header
     aria-label="wrap"
     class="c1"
   >
@@ -462,74 +468,74 @@ exports[`<Base/> > should render base component 1`] = `
           href="#target1"
           target="_self"
         >
-          Link 1
+          url 1
         </a>
         <a
           class="c7"
           href="#target2"
           target="_self"
         >
-          Link 2
+          url 2
         </a>
         <a
           class="c7"
           href="#target3"
           target="_self"
         >
-          Link 3
+          url 3
         </a>
         <a
           class="c7"
           href="#target4"
           target="_self"
         >
-          Link 4
+          url 4
         </a>
         <a
           class="c7"
           href="#target5"
           target="_self"
         >
-          Link 5
+          url 5
         </a>
         <a
           class="c7"
           href="#target6"
           target="_self"
         >
-          Link 6
+          url 6
         </a>
         <a
           class="c7"
           href="#target7"
           target="_self"
         >
-          Link 7
+          url 7
         </a>
         <a
           class="c7"
           href="#target8"
           target="_self"
         >
-          Link 8
+          url 8
         </a>
         <a
           class="c7"
           href="#target9"
           target="_self"
         >
-          Link 9
+          url 9
         </a>
         <a
           class="c7"
           href="#target10"
           target="_self"
         >
-          Link 10
+          url 10
         </a>
       </nav>
     </div>
-  </div>
+  </header>
   <section
     class="c8"
   >
@@ -549,9 +555,7 @@ exports[`<Base/> > should render base component 1`] = `
           </h1>
           <div
             class="c14 c15"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum odio tenetur consequatur obcaecati, earum perferendis commodi id repellat beatae, maiores numquam quos enim necessitatibus ipsam fugiat, incidunt consectetur aperiam!
-          </div>
+          />
         </article>
         <div
           class=""
@@ -559,7 +563,7 @@ exports[`<Base/> > should render base component 1`] = `
           <img
             alt="img"
             class=""
-            src="assets/images/javascript.svg"
+            src="http://localhost:1337assets/images/javascript.svg"
           />
         </div>
       </div>
@@ -662,16 +666,16 @@ exports[`<Base/> > should render base component 1`] = `
               alt="Teste 1"
               aria-label="item-img"
               class="c25"
-              src="https://source.unsplash.com/random/800x800?r=1"
+              src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
             />
             <div
               aria-label="Modal"
               class="c26"
-              id="Teste 1"
+              id="GridImg-undefined"
             >
               <img
                 alt="Teste 1"
-                src="https://source.unsplash.com/random/800x800?r=1"
+                src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
               />
               <span
                 aria-label="Close-img"
@@ -680,146 +684,6 @@ exports[`<Base/> > should render base component 1`] = `
               </span>
               <div>
                 Teste 1
-              </div>
-            </div>
-          </div>
-          <div
-            class="c24"
-          >
-            <img
-              alt="Teste 2"
-              aria-label="item-img"
-              class="c25"
-              src="https://source.unsplash.com/random/800x800?r=2"
-            />
-            <div
-              aria-label="Modal"
-              class="c26"
-              id="Teste 2"
-            >
-              <img
-                alt="Teste 2"
-                src="https://source.unsplash.com/random/800x800?r=2"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 2
-              </div>
-            </div>
-          </div>
-          <div
-            class="c24"
-          >
-            <img
-              alt="Teste 3"
-              aria-label="item-img"
-              class="c25"
-              src="https://source.unsplash.com/random/800x800?r=3"
-            />
-            <div
-              aria-label="Modal"
-              class="c26"
-              id="Teste 3"
-            >
-              <img
-                alt="Teste 3"
-                src="https://source.unsplash.com/random/800x800?r=3"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 3
-              </div>
-            </div>
-          </div>
-          <div
-            class="c24"
-          >
-            <img
-              alt="Teste 4"
-              aria-label="item-img"
-              class="c25"
-              src="https://source.unsplash.com/random/800x800?r=4"
-            />
-            <div
-              aria-label="Modal"
-              class="c26"
-              id="Teste 4"
-            >
-              <img
-                alt="Teste 4"
-                src="https://source.unsplash.com/random/800x800?r=4"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 4
-              </div>
-            </div>
-          </div>
-          <div
-            class="c24"
-          >
-            <img
-              alt="Teste 5"
-              aria-label="item-img"
-              class="c25"
-              src="https://source.unsplash.com/random/800x800?r=5"
-            />
-            <div
-              aria-label="Modal"
-              class="c26"
-              id="Teste 5"
-            >
-              <img
-                alt="Teste 5"
-                src="https://source.unsplash.com/random/800x800?r=5"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 5
-              </div>
-            </div>
-          </div>
-          <div
-            class="c24"
-          >
-            <img
-              alt="Teste 6"
-              aria-label="item-img"
-              class="c25"
-              src="https://source.unsplash.com/random/800x800?r=6"
-            />
-            <div
-              aria-label="Modal"
-              class="c26"
-              id="Teste 6"
-            >
-              <img
-                alt="Teste 6"
-                src="https://source.unsplash.com/random/800x800?r=6"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 6
               </div>
             </div>
           </div>
@@ -846,90 +710,7 @@ exports[`<Base/> > should render base component 1`] = `
         >
           <div
             class="c14 c15"
-          >
-            <p>
-              <strong>
-                Pellentesque habitant morbi tristique
-              </strong>
-               senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. 
-              <em>
-                Aenean ultricies mi vitae est.
-              </em>
-               Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
-              <code>
-                commodo vitae
-              </code>
-              , ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
-              <a
-                href="#"
-              >
-                Donec non enim
-              </a>
-               in turpis pulvinar facilisis. Ut felis.
-            </p>
-            
-  
-            <h2>
-              Header Level 2
-            </h2>
-            
-  
-            <ol>
-              
-     
-              <li>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              </li>
-              
-     
-              <li>
-                Aliquam tincidunt mauris eu risus.
-              </li>
-              
-  
-            </ol>
-            
-  
-            <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
-              </p>
-            </blockquote>
-            
-  
-            <h3>
-              Header Level 3
-            </h3>
-            
-  
-            <ul>
-              
-     
-              <li>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              </li>
-              
-     
-              <li>
-                Aliquam tincidunt mauris eu risus.
-              </li>
-              
-  
-            </ul>
-            
-  
-            <pre>
-              <code>
-                
-  #header h1 a {
-    display: block;
-    width: 300px;
-    height: 80px;
-  }
-  
-              </code>
-            </pre>
-          </div>
+          />
         </div>
       </div>
     </div>

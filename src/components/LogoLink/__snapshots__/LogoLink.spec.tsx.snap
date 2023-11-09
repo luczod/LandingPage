@@ -2,15 +2,15 @@
 
 exports[`<LogoLink/> > should Match snapshot 1`] = `
 .c1 {
+  text-decoration: none;
   color: inherit;
   display: flex;
-  text-decoration: none;
   align-items: center;
-  padding: 1rem;
 }
 
 .c1 >img {
-  max-height: 2.5rem;
+  height: 6rem;
+  width: 14rem;
 }
 
 .c0 {
@@ -28,7 +28,7 @@ exports[`<LogoLink/> > should Match snapshot 1`] = `
   >
     <img
       alt="hello"
-      src="#img"
+      src="http://localhost:1337#img"
     />
   </a>
 </h1>

@@ -4,6 +4,7 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
 .c0 {
   background-color: #FFFFFF;
   color: #0A1128;
+  border-bottom: 0.2rem solid #DDDDDD;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,7 +13,7 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 4.0rem;
+  padding: 2.4rem;
 }
 
 .c3 {
@@ -38,6 +39,7 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
 
 .c7 {
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .c8 {
@@ -80,6 +82,7 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
   display: block;
   width: 80%;
   max-width: 700px;
+  border-radius: 1rem;
 }
 
 .c9>div {
@@ -143,16 +146,16 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               alt="Teste 1"
               aria-label="item-img"
               class="c8"
-              src="https://source.unsplash.com/random/800x800?r=1"
+              src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
             />
             <div
               aria-label="Modal"
               class="c9"
-              id="Teste 1"
+              id="GridImg-8"
             >
               <img
                 alt="Teste 1"
-                src="https://source.unsplash.com/random/800x800?r=1"
+                src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
               />
               <span
                 aria-label="Close-img"
@@ -171,16 +174,16 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               alt="Teste 2"
               aria-label="item-img"
               class="c8"
-              src="https://source.unsplash.com/random/800x800?r=2"
+              src="http://localhost:1337https://source.unsplash.com/random/800x800?r=2"
             />
             <div
               aria-label="Modal"
               class="c9"
-              id="Teste 2"
+              id="GridImg-9"
             >
               <img
                 alt="Teste 2"
-                src="https://source.unsplash.com/random/800x800?r=2"
+                src="http://localhost:1337https://source.unsplash.com/random/800x800?r=2"
               />
               <span
                 aria-label="Close-img"
@@ -199,16 +202,16 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               alt="Teste 3"
               aria-label="item-img"
               class="c8"
-              src="https://source.unsplash.com/random/800x800?r=3"
+              src="http://localhost:1337https://source.unsplash.com/random/800x800?r=3"
             />
             <div
               aria-label="Modal"
               class="c9"
-              id="Teste 3"
+              id="GridImg-10"
             >
               <img
                 alt="Teste 3"
-                src="https://source.unsplash.com/random/800x800?r=3"
+                src="http://localhost:1337https://source.unsplash.com/random/800x800?r=3"
               />
               <span
                 aria-label="Close-img"
@@ -217,90 +220,6 @@ exports[`<GridImg/> > should render images in a grid 1`] = `
               </span>
               <div>
                 Teste 3
-              </div>
-            </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <img
-              alt="Teste 4"
-              aria-label="item-img"
-              class="c8"
-              src="https://source.unsplash.com/random/800x800?r=4"
-            />
-            <div
-              aria-label="Modal"
-              class="c9"
-              id="Teste 4"
-            >
-              <img
-                alt="Teste 4"
-                src="https://source.unsplash.com/random/800x800?r=4"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 4
-              </div>
-            </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <img
-              alt="Teste 5"
-              aria-label="item-img"
-              class="c8"
-              src="https://source.unsplash.com/random/800x800?r=5"
-            />
-            <div
-              aria-label="Modal"
-              class="c9"
-              id="Teste 5"
-            >
-              <img
-                alt="Teste 5"
-                src="https://source.unsplash.com/random/800x800?r=5"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 5
-              </div>
-            </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <img
-              alt="Teste 6"
-              aria-label="item-img"
-              class="c8"
-              src="https://source.unsplash.com/random/800x800?r=6"
-            />
-            <div
-              aria-label="Modal"
-              class="c9"
-              id="Teste 6"
-            >
-              <img
-                alt="Teste 6"
-                src="https://source.unsplash.com/random/800x800?r=6"
-              />
-              <span
-                aria-label="Close-img"
-              >
-                ×
-              </span>
-              <div>
-                Teste 6
               </div>
             </div>
           </div>

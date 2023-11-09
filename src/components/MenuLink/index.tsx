@@ -1,15 +1,13 @@
-import { ReactNode } from "react";
 import * as S from "./styles";
 
 export interface IMenuLinkProps {
-  id: string;
+  id?: string;
   link_text: string;
   url?: string;
   open_in_new_tab?: boolean;
 }
 
 export function MenuLink({
-  id,
   link_text,
   url,
   open_in_new_tab = false,

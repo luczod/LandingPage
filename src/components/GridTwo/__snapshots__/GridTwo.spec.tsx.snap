@@ -21,6 +21,7 @@ exports[`<GridTwo/> > should render two columns grid 1`] = `
 .c0 {
   background-color: #FFFFFF;
   color: #0A1128;
+  border-bottom: 0.2rem solid #DDDDDD;
   background: #0A1128;
   color: #FFFFFF;
   min-height: 100vh;
@@ -31,7 +32,7 @@ exports[`<GridTwo/> > should render two columns grid 1`] = `
 .c1 {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 4.0rem;
+  padding: 2.4rem;
 }
 
 .c6 {
@@ -71,9 +72,7 @@ exports[`<GridTwo/> > should render two columns grid 1`] = `
           </h1>
           <div
             class="c6"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum odio tenetur consequatur obcaecati, earum perferendis commodi id repellat beatae, maiores numquam quos enim necessitatibus ipsam fugiat, incidunt consectetur aperiam!
-          </div>
+          />
         </article>
         <div
           class=""
@@ -81,7 +80,7 @@ exports[`<GridTwo/> > should render two columns grid 1`] = `
           <img
             alt="img"
             class=""
-            src="assets/images/javascript.svg"
+            src="http://localhost:1337assets/images/javascript.svg"
           />
         </div>
       </div>

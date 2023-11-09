@@ -48,70 +48,70 @@ exports[`<NavLinks/> > parentElement should Match snapshot 1`] = `
     href="#target1"
     target="_self"
   >
-    Link 1
+    url 1
   </a>
   <a
     class="c1"
     href="#target2"
     target="_self"
   >
-    Link 2
+    url 2
   </a>
   <a
     class="c1"
     href="#target3"
     target="_self"
   >
-    Link 3
+    url 3
   </a>
   <a
     class="c1"
     href="#target4"
     target="_self"
   >
-    Link 4
+    url 4
   </a>
   <a
     class="c1"
     href="#target5"
     target="_self"
   >
-    Link 5
+    url 5
   </a>
   <a
     class="c1"
     href="#target6"
     target="_self"
   >
-    Link 6
+    url 6
   </a>
   <a
     class="c1"
     href="#target7"
     target="_self"
   >
-    Link 7
+    url 7
   </a>
   <a
     class="c1"
     href="#target8"
     target="_self"
   >
-    Link 8
+    url 8
   </a>
   <a
     class="c1"
     href="#target9"
     target="_self"
   >
-    Link 9
+    url 9
   </a>
   <a
     class="c1"
     href="#target10"
     target="_self"
   >
-    Link 10
+    url 10
   </a>
 </nav>
 `;
@@ -152,7 +152,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target1"
     target="_self"
   >
-    Link 1
+    url 1
   </a>,
   .c0 {
   color: #0A1128;
@@ -188,7 +188,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target2"
     target="_self"
   >
-    Link 2
+    url 2
   </a>,
   .c0 {
   color: #0A1128;
@@ -224,7 +224,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target3"
     target="_self"
   >
-    Link 3
+    url 3
   </a>,
   .c0 {
   color: #0A1128;
@@ -260,7 +260,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target4"
     target="_self"
   >
-    Link 4
+    url 4
   </a>,
   .c0 {
   color: #0A1128;
@@ -296,7 +296,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target5"
     target="_self"
   >
-    Link 5
+    url 5
   </a>,
   .c0 {
   color: #0A1128;
@@ -332,7 +332,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target6"
     target="_self"
   >
-    Link 6
+    url 6
   </a>,
   .c0 {
   color: #0A1128;
@@ -368,7 +368,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target7"
     target="_self"
   >
-    Link 7
+    url 7
   </a>,
   .c0 {
   color: #0A1128;
@@ -404,7 +404,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target8"
     target="_self"
   >
-    Link 8
+    url 8
   </a>,
   .c0 {
   color: #0A1128;
@@ -440,7 +440,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target9"
     target="_self"
   >
-    Link 9
+    url 9
   </a>,
   .c0 {
   color: #0A1128;
@@ -476,7 +476,7 @@ exports[`<NavLinks/> > should Match snapshot 1`] = `
     href="#target10"
     target="_self"
   >
-    Link 10
+    url 10
   </a>,
 ]
 `;

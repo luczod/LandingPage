@@ -24,7 +24,7 @@ describe("<Footer/>", () => {
       .c1 {
         max-width: 120rem;
         margin: 0 auto;
-        padding: 4.0rem;
+        padding: 2.4rem;
       }
 
       <div>

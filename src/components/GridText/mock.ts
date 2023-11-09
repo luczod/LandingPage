@@ -3,18 +3,21 @@ export default {
   title: "My grid",
   description:
     "Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde",
-  grid: [
+  text_grid: [
     {
+      id: "1",
       title: "Teste 1",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
     },
     {
+      id: "2",
       title: "Teste 2",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
     },
     {
+      id: "3",
       title: "Teste 3",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.",
