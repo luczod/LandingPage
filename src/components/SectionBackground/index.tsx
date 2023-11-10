@@ -9,7 +9,7 @@ export interface ISectionBgProps {
 
 export function SectionBackground({ children, background }: ISectionBgProps) {
   return (
-    <S.Container background={background}>
+    <S.Container $background={background}>
       <SectionContainer>{children}</SectionContainer>
     </S.Container>
   );

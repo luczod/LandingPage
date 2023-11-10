@@ -5,8 +5,8 @@ interface IProps {
   background: boolean;
 }
 
-export const Container = styled.div<IProps>`
-  ${({ theme, background }) => css`
+export const Container = styled.div`
+  ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;

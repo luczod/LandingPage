@@ -19,7 +19,7 @@ export function GridTwo({
 }: IGridTwoProps) {
   return (
     <SectionBackground background={bg}>
-      <S.Container background={bg}>
+      <S.Container>
         <S.TextColumn>
           <Heading upperTitle colorDark={!bg}>
             {title}

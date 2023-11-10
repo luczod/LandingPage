@@ -18,7 +18,7 @@ export function Heading({
   upperTitle = false,
 }: IHeadingProps) {
   return (
-    <S.Title colorDark={colorDark} upperTitle={upperTitle} as={as} size={size}>
+    <S.Title $colorark={colorDark} $uppertitle={false} as={as} size={size}>
       {children}
     </S.Title>
   );

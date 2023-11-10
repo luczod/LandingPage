@@ -1,10 +1,6 @@
 import styled, { css } from "styled-components";
 import { Container as TextComponent } from "../Textfn/styles";
 
-interface IPros {
-  open?: boolean;
-}
-
 export const Container = styled.div`
   ${({ theme }) => css`
     > ${TextComponent} {
@@ -71,8 +67,8 @@ export const ModalImg = styled.div`
     & > img {
       margin: auto;
       display: block;
-      width: 80%;
       max-width: 700px;
+      object-fit: cover;
       border-radius: 1rem;
       /* 100% Image Width on Smaller Screens */
       @media only screen and (max-width: 768px) {

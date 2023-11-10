@@ -45,13 +45,13 @@ export function GridImg({
               <S.Image
                 onClick={() => OpenModal(`GridImg-${item.id}`)}
                 aria-label="item-img"
-                src={apiUrl + item.image.data[0].attributes.url}
+                src={item.image.data[0].attributes.url}
                 alt={item.image.data[0].attributes.alternativeText}
               />
 
               <S.ModalImg id={`GridImg-${item.id}`} aria-label="Modal">
                 <img
-                  src={apiUrl + item.image.data[0].attributes.url}
+                  src={item.image.data[0].attributes.url}
                   alt={item.image.data[0].attributes.alternativeText}
                 />
                 <span

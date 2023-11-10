@@ -1,9 +1,9 @@
 import styled, { DefaultTheme, css } from "styled-components";
 type OnlyKeys = keyof typeof titleSize;
 interface ISProps {
-  colorDark: boolean;
+  $colorark: boolean;
   size: OnlyKeys;
-  upperTitle?: boolean;
+  $uppertitle?: boolean;
 }
 
 const titleSize = {
@@ -29,9 +29,9 @@ const mediaFont = (theme: DefaultTheme) => css`
 `;
 
 export const Title = styled.h1<ISProps>`
-  ${({ theme, size, upperTitle, colorDark }) => css`
+  ${({ theme, size, $uppertitle, $colorark: colorDark }) => css`
     color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
     ${titleSize[size](theme)};
-    text-transform: ${upperTitle ? "uppercase" : "none"};
+    text-transform: ${$uppertitle ? "uppercase" : "none"};
   `}
 `;
