@@ -3,7 +3,7 @@ import { Container as SectionContainer } from "../SectionContainer/styles";
 import { Title as Heading } from "../Heading/styles";
 
 interface IProps {
-  visible: boolean;
+  $visible: boolean;
 }
 
 const menuVisible = () => css`
@@ -12,7 +12,7 @@ const menuVisible = () => css`
 `;
 
 export const Container = styled.header<IProps>`
-  ${({ theme, visible }) => css`
+  ${({ theme, $visible }) => css`
     position: fixed;
     z-index: 5;
     top: 0;
@@ -36,7 +36,7 @@ export const Container = styled.header<IProps>`
       height: 100vh;
       visibility: hidden;
       opacity: 0;
-      ${visible && menuVisible()}
+      ${$visible && menuVisible()}
 
       > ${SectionContainer} {
         height: 100%;
@@ -77,7 +77,7 @@ export const MenuContainer = styled.div`
 `;
 
 export const Btn = styled.button<IProps>`
-  ${({ theme, visible }) => css`
+  ${({ theme, $visible }) => css`
     z-index: 6;
     position: fixed;
     top: 2rem;
@@ -86,7 +86,7 @@ export const Btn = styled.button<IProps>`
     color: ${theme.colors.white};
     border: none;
     display: none;
-    pointer-events: ${visible ? "none" : "all"};
+    pointer-events: ${$visible ? "none" : "all"};
 
     @media ${theme.media.lteMedium} {
       display: flex;

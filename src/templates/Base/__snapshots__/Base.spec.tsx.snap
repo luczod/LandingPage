@@ -299,8 +299,8 @@ exports[`<Base/> > should render base component 1`] = `
 .c26>img {
   margin: auto;
   display: block;
-  width: 80%;
   max-width: 700px;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -666,16 +666,16 @@ exports[`<Base/> > should render base component 1`] = `
               alt="Teste 1"
               aria-label="item-img"
               class="c25"
-              src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
+              src="https://source.unsplash.com/random/800x800?r=1"
             />
             <div
               aria-label="Modal"
               class="c26"
-              id="GridImg-undefined"
+              id="GridImg-8"
             >
               <img
                 alt="Teste 1"
-                src="http://localhost:1337https://source.unsplash.com/random/800x800?r=1"
+                src="https://source.unsplash.com/random/800x800?r=1"
               />
               <span
                 aria-label="Close-img"
@@ -684,6 +684,62 @@ exports[`<Base/> > should render base component 1`] = `
               </span>
               <div>
                 Teste 1
+              </div>
+            </div>
+          </div>
+          <div
+            class="c24"
+          >
+            <img
+              alt="Teste 2"
+              aria-label="item-img"
+              class="c25"
+              src="https://source.unsplash.com/random/800x800?r=2"
+            />
+            <div
+              aria-label="Modal"
+              class="c26"
+              id="GridImg-9"
+            >
+              <img
+                alt="Teste 2"
+                src="https://source.unsplash.com/random/800x800?r=2"
+              />
+              <span
+                aria-label="Close-img"
+              >
+                ×
+              </span>
+              <div>
+                Teste 2
+              </div>
+            </div>
+          </div>
+          <div
+            class="c24"
+          >
+            <img
+              alt="Teste 3"
+              aria-label="item-img"
+              class="c25"
+              src="https://source.unsplash.com/random/800x800?r=3"
+            />
+            <div
+              aria-label="Modal"
+              class="c26"
+              id="GridImg-10"
+            >
+              <img
+                alt="Teste 3"
+                src="https://source.unsplash.com/random/800x800?r=3"
+              />
+              <span
+                aria-label="Close-img"
+              >
+                ×
+              </span>
+              <div>
+                Teste 3
               </div>
             </div>
           </div>

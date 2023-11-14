@@ -396,44 +396,74 @@ exports[`<Menu/> > should render Logo and Main menu Nav 1`] = `
       >
         <a
           class="c7"
+          href="#target1"
           target="_self"
-        />
+        >
+          url 1
+        </a>
         <a
           class="c7"
+          href="#target2"
           target="_self"
-        />
+        >
+          url 2
+        </a>
         <a
           class="c7"
+          href="#target3"
           target="_self"
-        />
+        >
+          url 3
+        </a>
         <a
           class="c7"
+          href="#target4"
           target="_self"
-        />
+        >
+          url 4
+        </a>
         <a
           class="c7"
+          href="#target5"
           target="_self"
-        />
+        >
+          url 5
+        </a>
         <a
           class="c7"
+          href="#target6"
           target="_self"
-        />
+        >
+          url 6
+        </a>
         <a
           class="c7"
+          href="#target7"
           target="_self"
-        />
+        >
+          url 7
+        </a>
         <a
           class="c7"
+          href="#target8"
           target="_self"
-        />
+        >
+          url 8
+        </a>
         <a
           class="c7"
+          href="#target9"
           target="_self"
-        />
+        >
+          url 9
+        </a>
         <a
           class="c7"
+          href="#target10"
           target="_self"
-        />
+        >
+          url 10
+        </a>
       </nav>
     </div>
   </header>

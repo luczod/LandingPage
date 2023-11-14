@@ -12,7 +12,7 @@ describe("<LogoLink/>", () => {
   it("should render img logo", () => {
     renderTheme(<LogoLink link="#target" srcImg="#img" text="hello" />);
     const img = screen.getByRole("img", { name: "hello" });
-    expect(img).toHaveAttribute("src", "#img");
+    expect(img).toHaveAttribute("src", "http://localhost:1337#img");
   });
   it("should Match snapshot", () => {
     const { container } = renderTheme(

@@ -14,7 +14,7 @@ export function Menu({ Links = [], logoData }: IMenuProps) {
   return (
     <>
       <S.Btn
-        visible={visible}
+        $visible={visible}
         onClick={() => setVisible(true)}
         aria-label="Open/close menu"
       >
@@ -23,7 +23,7 @@ export function Menu({ Links = [], logoData }: IMenuProps) {
       </S.Btn>
       <S.Container
         aria-label="wrap"
-        visible={visible}
+        $visible={visible}
         onClick={() => setVisible(false)}
       >
         <S.MenuContainer>
